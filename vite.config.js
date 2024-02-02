@@ -3,5 +3,5 @@ import { defineConfig } from "vite";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [],
-  base: "/pages-test/",
+  base: "/gaza_projections_website/",
 });
