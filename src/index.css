@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+.button {
+  @apply px-7 py-3 border rounded-4xl font-medium text-center;
+}
+
+.button-primary {
+  @apply bg-primary text-white;
+}
+
+.button-secondary {
+  @apply bg-transparent text-primary border-primary;
+}
+
+.button-inverted {
+  @apply bg-transparent text-white border-white;
+}
+
+.caption {
+  @apply text-base italic font-light;
+}
+
+.tag {
+  @apply text-xs font-medium bg-[#E5E7EB] px-3 py-1 rounded-sm w-fit;
+}
+
+.centered {
+  @apply lg:max-w-[1383px] w-full lg:mx-auto;
+}
