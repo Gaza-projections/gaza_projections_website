@@ -14,7 +14,9 @@ export function addCarouselEventListeners(carouselSelector) {
   const slidesCount = slidesWrapper.children.length;
   let index = 0;
 
-  const updateIndicators = () => {
+  const showCurrentCarouselSlide = () => {
+    slidesWrapper.style.transform = `translateX(-${index * slideWidth}px)`;
+
     indicators.forEach((indicator, i) => {
       if (i === index) {
         indicator.classList.add('bg-primary');
@@ -24,11 +26,6 @@ export function addCarouselEventListeners(carouselSelector) {
         indicator.classList.remove('bg-primary');
       }
     });
-  };
-
-  const showCurrentCarouselSlide = () => {
-    slidesWrapper.style.transform = `translateX(-${index * slideWidth}px)`;
-    updateIndicators();
   };
 
   nextButton.addEventListener('click', () => {
