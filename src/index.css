@@ -31,5 +31,5 @@
 }
 
 .centered {
-  @apply lg:max-w-[1383px] w-full lg:mx-auto;
+  @apply w-full lg:max-w-[1383px] lg:mx-auto;
 }

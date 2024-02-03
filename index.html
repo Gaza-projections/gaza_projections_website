@@ -10,9 +10,42 @@
     <title>Gaza Projections</title>
   </head>
   <body>
-    Body
+    <div id="root">
+      <nav class="centered flex items-center h-[100px] gap-16 justify-center relative bg-white">
+        <a href="#about" class="text-lg underline text-primary font-bold">About</a>
+        <a href="https://github.com/Gaza-projections/gaza_projections_website" target="_blank">GitHub</a>
+        <a href="" class="button button-primary hidden absolute right-16 top-1/2 -translate-y-1/2 md:inline">
+          Download Report
+        </a>
+      </nav>
 
-    <div id="root"></div>
+      <main>
+        <!-- Title Section -->
+        <section class="bg-gray-light">
+          <div
+            class="centered px-2 sm:px-16 py-10 min-h-[283px] flex flex-col md:flex-row gap-10 justify-between items-center"
+          >
+            <h1 class="flex-[5] max-w-[608px] px-4 md:px-0 text-center md:text-left text-4xl lg:text-5xl">
+              Crisis in Gaza: Scenario-based health impact projections
+            </h1>
+
+            <div class="flex gap-3 sm:gap-7 flex-[4] max-w-[435px] justify-center md:justify-end px-4">
+              <div
+                class="flex items-center justify-center flex-1 px-4 rounded-2xl min-w-[140px] aspect-square bg-white"
+              >
+                <img src="public/logos/london-school-of-hygiene.svg" alt="London School of Hygiene logo" />
+              </div>
+
+              <div
+                class="flex items-center justify-center flex-1 px-4 rounded-2xl min-w-[140px] aspect-square bg-white"
+              >
+                <img src="public/logos/johns-hopkins-university.svg" alt="Johns Hopkins University logo" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
