@@ -34,7 +34,7 @@ export default {
   },
   plugins: [
     plugin(function ({ addUtilities }) {
-      const newUtilities = {
+      const textUtilities = {
         '.text-h1': {
           fontSize: '40px',
           fontWeight: '700'
@@ -43,16 +43,16 @@ export default {
           fontSize: '24px',
           fontWeight: '700'
         },
-        '.body-1': {
+        '.text-body-1': {
           fontSize: '18px',
           fontWeight: '400'
         },
-        '.body-2': {
+        '.text-body-2': {
           fontSize: '24px',
           fontWeight: '400'
         }
       };
-      addUtilities(newUtilities);
+      addUtilities(textUtilities);
     })
   ]
 };
