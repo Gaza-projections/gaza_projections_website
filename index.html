@@ -48,7 +48,7 @@
         </section>
 
         <!-- Report Section -->
-        <section class="centered flex flex-col items-center gap-10 w-full py-10 lg:py-28 lg:px-16">
+        <section class="centered flex flex-col items-center gap-10 w-full py-10 lg:py-28">
           <h1 class="text-h1">The Report</h1>
 
           <div
@@ -70,6 +70,62 @@
               <a class="button w-full lg:hidden">Download the Report</a>
             </div>
           </div>
+        </section>
+
+        <section class="centered px-24 py-14 bg-gray-dark lg:rounded-2xl">
+          <h2 class="text-h2 text-center text-white">A snapshot of our current projections</h2>
+          <p class="mt-5 text-body-2 text-center text-white">
+            The increase in malnutrition is analysed as an underlying cause. We anticipate xx% yy% and zz% acute
+            malnutrition in the ceasefire, status quo, and escalation scenarios.
+          </p>
+
+          <!-- Carousel -->
+          <div class="relative flex items-center justify-center gap-7 py-12 js-carousel">
+            <!-- Left Arrow -->
+            <button title="previous button" class="js-prev">
+              <div title="left arrow icon" class="w-12 h-12 bg-[url('public/icons/chevron-left.svg')]"></div>
+            </button>
+
+            <!-- Slides -->
+            <div class="relative w-full overflow-hidden">
+              <div class="flex transition-transform duration-500 ease-in-out js-slides-wrapper">
+                <div class="w-full flex-shrink-0 js-slide">
+                  <img src="https://picsum.photos/seed/1/1200/600" class="w-full" alt="Slide 1" />
+                </div>
+                <div class="w-full flex-shrink-0 js-slide">
+                  <img src="https://picsum.photos/seed/2/1200/600" class="w-full" alt="Slide 2" />
+                </div>
+                <div class="w-full flex-shrink-0 js-slide">
+                  <img src="https://picsum.photos/seed/3/1200/600" class="w-full" alt="Slide 3" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Indicators -->
+            <div class="absolute bottom-2 left-0 right-0 flex items-center justify-center gap-5">
+              <div class="rounded-full w-2 h-2 bg-primary transition-all duration-500 js-indicator"></div>
+              <div class="rounded-full w-2 h-2 bg-[#C4C4C4] transition-all duration-500 js-indicator"></div>
+              <div class="rounded-full w-2 h-2 bg-[#C4C4C4] transition-all duration-500 js-indicator"></div>
+            </div>
+
+            <!-- Right Arrow -->
+            <button title="next button" class="js-next">
+              <div title="right arrow icon" class="w-12 h-12 bg-[url('public/icons/chevron-right.svg')]"></div>
+            </button>
+          </div>
+
+          <p class="text-body-2 text-center text-white pt-16 pb-10">
+            Excess mortality is the number of deaths attributed directly and indirectly to the current crisis that are
+            in addition to deaths that would be expected based on Gaza data from the recent past.
+          </p>
+
+          <footer class="flex flex-col items-center gap-5">
+            <h2 class="text-h2 text-white">For more details, please see our full report:</h2>
+            <div class="flex gap-5">
+              <a href="" class="button button-primary">Download Full Report</a>
+              <a href="" class="button button-inverted">Download Arabic Summary</a>
+            </div>
+          </footer>
         </section>
 
         <!-- About Section -->
