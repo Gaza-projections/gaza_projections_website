@@ -14,6 +14,7 @@ export default {
       fontSize: {
         lg: '18px',
         '2xl': '24px',
+        '4xl': '36px',
         '5xl': '40px'
       },
       padding: {
