@@ -11,7 +11,7 @@
 }
 
 .button-primary {
-  @apply bg-primary text-white;
+  @apply bg-primary text-white border-primary;
 }
 
 .button-secondary {
