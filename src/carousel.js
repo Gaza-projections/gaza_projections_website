@@ -9,12 +9,12 @@ export function addCarouselEventListeners(carouselSelector) {
   const nextButton = carousel.querySelector('.js-next');
   const slidesWrapper = carousel.querySelector('.js-slides-wrapper');
   const indicators = carousel.querySelectorAll('.js-indicator');
-
-  const slideWidth = slidesWrapper.clientWidth;
   const slidesCount = slidesWrapper.children.length;
+
   let index = 0;
 
   const showCurrentCarouselSlide = () => {
+    const slideWidth = slidesWrapper.clientWidth;
     slidesWrapper.style.transform = `translateX(-${index * slideWidth}px)`;
 
     indicators.forEach((indicator, i) => {
