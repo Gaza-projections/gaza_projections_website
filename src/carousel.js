@@ -37,6 +37,4 @@ export function addCarouselEventListeners(carouselSelector) {
     index = index - 1 < 0 ? slidesCount - 1 : index - 1;
     showCurrentCarouselSlide();
   });
-
-  slidesWrapper.appendChild;
 }
