@@ -33,3 +33,21 @@
 .centered {
   @apply w-full lg:max-w-[1383px] lg:mx-auto;
 }
+
+.splide__pagination__page {
+  @apply rounded-full;
+  @apply w-4;
+  @apply h-4;
+  @apply lg:w-2;
+  @apply lg:h-2;
+  @apply bg-primary;
+  @apply transition-all;
+}
+
+.splide__pagination__page.is-active {
+  @apply bg-[#C4C4C4];
+  @apply w-5;
+  @apply h-5;
+  @apply lg:w-[10px];
+  @apply lg:h-[10px];
+}

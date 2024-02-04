@@ -1,6 +1,9 @@
+// Splide core styles
+import '@splidejs/splide/css/core';
 import './index.css';
-import { addCarouselEventListeners } from './carousel';
+import Splide from '@splidejs/splide';
 
 document.addEventListener('DOMContentLoaded', () => {
-  addCarouselEventListeners('.js-carousel');
+  const splide = new Splide('.js-carousel');
+  splide.mount();
 });
