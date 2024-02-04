@@ -8,35 +8,48 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet" />
     <link rel="shortcut icon" type="image/svg" href="/icons/flag-icon.svg" />
-    <title>Gaza Projections</title>
+    <title>Crisis in Gaza: Scenario-Based Health Impact Projections</title>
+    <meta
+      name="description"
+      content="This project aims to provide projections of excess mortality for different disease areas (disease
+    modules) in Gaza. These estimations will provide decision-makers and responders information to plan for and respond to
+    different scenarios."
+    />
   </head>
   <body>
     <div id="root">
-      <nav class="centered flex items-center h-[100px] gap-16 justify-center relative bg-white">
-        <a href="#about" class="text-lg underline text-primary font-bold">About</a>
-        <a href="https://github.com/Gaza-projections/gaza_projections_website" target="_blank">GitHub</a>
-        <a href="" class="button button-primary hidden absolute right-16 top-1/2 -translate-y-1/2 md:inline">
-          Download Report
-        </a>
+      <nav class="h-[100px] bg-white md:sticky top-0 z-10 w-full">
+        <div class="centered flex items-center centered justify-center gap-16 h-full">
+          <a href="#" class="text-lg underline text-primary font-bold">About</a>
+          <a class="hover:underline" href="https://github.com/Gaza-projections/gaza_projections_website" target="_blank"
+            >GitHub</a
+          >
+          <a href="" class="button button-primary hidden absolute right-16 top-1/2 -translate-y-1/2 md:inline">
+            Download Report
+          </a>
+        </div>
       </nav>
 
       <main>
         <!-- Title Section -->
-        <section class="bg-gray-light">
+        <div class="bg-gray-light">
           <div
             class="centered px-2 sm:px-16 py-10 min-h-[283px] flex flex-col md:flex-row gap-10 justify-between items-center"
           >
             <h1
               class="flex-[5] max-w-[608px] px-4 md:px-0 text-center md:text-left text-4xl md:text-5xl leading-[48px] font-bold"
             >
-              Crisis in Gaza: Scenario-based health impact projections
+              Crisis in Gaza: Scenario-Based Health Impact Projections
             </h1>
 
             <div class="flex gap-2 sm:gap-7 flex-[4] max-w-[435px] sm:justify-center md:justify-end px-4">
               <div
                 class="flex items-center justify-center flex-1 px-4 rounded-2xl min-w-[140px] aspect-square bg-white"
               >
-                <img src="/logos/london-school-of-hygiene.svg" alt="London School of Hygiene logo" />
+                <img
+                  src="/logos/london-school-of-hygiene.svg"
+                  alt="London School of Hygiene &amp; Tropical Medicine logo"
+                />
               </div>
 
               <div
@@ -46,7 +59,7 @@
               </div>
             </div>
           </div>
-        </section>
+        </div>
 
         <!-- Report Section -->
         <section class="centered flex flex-col items-center gap-10 w-full py-10 lg:py-28">
@@ -56,7 +69,7 @@
             class="flex flex-col lg:flex-row justify-between gap-12 p-12 px-4 sm:px-12 bg-primary text-white lg:rounded-2xl"
           >
             <section class="flex flex-col items-center lg:items-start gap-10 lg:gap-12 flex-1 lg:max-w-[483px]">
-              <h2 class="text-h2 text-center lg:text-left">Crisis in Gaza: Scenario-based health impact projections</h2>
+              <h2 class="text-h2 text-center lg:text-left">Crisis in Gaza: Scenario-Based Health Impact Projections</h2>
 
               <p class="text-body-1 text-center lg:text-left">
                 What has happened so far, written dispassionately and not mentioning impacts yet or just citing topline
@@ -137,7 +150,7 @@
         </section>
 
         <!-- About Section -->
-        <section id="about" class="bg-gray-light">
+        <section class="bg-gray-light">
           <div class="centered flex flex-col items-center gap-10 px-4 pt-20 lg:pt-24">
             <!-- Flag Icon -->
             <div class="w-[137px] h-[86px] bg-[url('/icons/flag-icon.svg')] bg-no-repeat bg-cover"></div>
