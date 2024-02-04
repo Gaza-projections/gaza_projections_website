@@ -1,6 +1,6 @@
 import './index.css';
 import { addCarouselEventListeners } from './carousel';
 
-window.onload = () => {
+document.addEventListener('DOMContentLoaded', () => {
   addCarouselEventListeners('.js-carousel');
-};
+});
