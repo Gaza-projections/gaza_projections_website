@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
@@ -10,9 +10,223 @@
     <title>Gaza Projections</title>
   </head>
   <body>
-    Body
+    <div id="root">
+      <nav class="centered flex items-center h-[100px] gap-16 justify-center relative bg-white">
+        <a href="#about" class="text-lg underline text-primary font-bold">About</a>
+        <a href="https://github.com/Gaza-projections/gaza_projections_website" target="_blank">GitHub</a>
+        <a href="" class="button button-primary hidden absolute right-16 top-1/2 -translate-y-1/2 md:inline">
+          Download Report
+        </a>
+      </nav>
 
-    <div id="root"></div>
+      <main>
+        <!-- Title Section -->
+        <section class="bg-gray-light">
+          <div
+            class="centered px-2 sm:px-16 py-10 min-h-[283px] flex flex-col md:flex-row gap-10 justify-between items-center"
+          >
+            <h1
+              class="flex-[5] max-w-[608px] px-4 md:px-0 text-center md:text-left text-4xl md:text-5xl leading-[48px] font-bold"
+            >
+              Crisis in Gaza: Scenario-based health impact projections
+            </h1>
+
+            <div class="flex gap-2 sm:gap-7 flex-[4] max-w-[435px] sm:justify-center md:justify-end px-4">
+              <div
+                class="flex items-center justify-center flex-1 px-4 rounded-2xl min-w-[140px] aspect-square bg-white"
+              >
+                <img src="/logos/london-school-of-hygiene.svg" alt="London School of Hygiene logo" />
+              </div>
+
+              <div
+                class="flex items-center justify-center flex-1 px-4 rounded-2xl min-w-[140px] aspect-square bg-white"
+              >
+                <img src="/logos/johns-hopkins-university.svg" alt="Johns Hopkins University logo" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Report Section -->
+        <section class="centered flex flex-col items-center gap-10 w-full py-10 lg:py-28">
+          <h1 class="text-h1">The Report</h1>
+
+          <div
+            class="flex flex-col lg:flex-row justify-between gap-12 p-12 px-4 sm:px-12 bg-primary text-white lg:rounded-2xl"
+          >
+            <section class="flex flex-col items-center lg:items-start gap-10 lg:gap-12 flex-1 lg:max-w-[483px]">
+              <h2 class="text-h2 text-center lg:text-left">Crisis in Gaza: Scenario-based health impact projections</h2>
+
+              <p class="text-body-1 text-center lg:text-left">
+                What has happened so far, written dispassionately and not mentioning impacts yet or just citing topline
+                figures on UN estimates of people affected.
+              </p>
+              <p class="text-body-1">January to June 2024</p>
+              <a class="button hidden lg:block">Download the Report</a>
+            </section>
+
+            <div class="flex flex-col lg:flex-row items-center gap-10 lg:justify-end flex-1">
+              <img src="/images/report-screenshots.png" alt="Report Cover" />
+              <a class="button w-full lg:hidden">Download the Report</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="centered px-24 py-14 bg-gray-dark lg:rounded-2xl">
+          <h2 class="text-h2 text-center text-white">A snapshot of our current projections</h2>
+          <p class="mt-5 text-body-2 text-center text-white">
+            The increase in malnutrition is analysed as an underlying cause. We anticipate xx% yy% and zz% acute
+            malnutrition in the ceasefire, status quo, and escalation scenarios.
+          </p>
+
+          <!-- Carousel -->
+          <div class="relative flex items-center justify-center gap-7 py-12 js-carousel">
+            <!-- Left Arrow -->
+            <button title="previous button" class="js-prev">
+              <div title="left arrow icon" class="w-12 h-12 bg-[url('/icons/chevron-left.svg')]"></div>
+            </button>
+
+            <!-- Slides -->
+            <div class="relative w-full overflow-hidden">
+              <div class="relative flex items-center transition-all duration-500 ease-in-out js-slides-wrapper">
+                <div class="w-full flex-shrink-0 js-slide">
+                  <img src="https://picsum.photos/seed/1/1200/600" class="w-full" alt="Slide 1" />
+                </div>
+                <div class="w-full flex-shrink-0 js-slide">
+                  <img src="https://picsum.photos/seed/2/1200/600" class="w-full" alt="Slide 2" />
+                </div>
+                <div class="w-full flex-shrink-0 js-slide">
+                  <img src="https://picsum.photos/seed/3/1200/600" class="w-full" alt="Slide 3" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Indicators -->
+            <div class="absolute bottom-2 left-0 right-0 flex items-center justify-center gap-5">
+              <div class="rounded-full w-2 h-2 bg-primary transition-all duration-500 js-indicator"></div>
+              <div class="rounded-full w-2 h-2 bg-[#C4C4C4] transition-all duration-500 js-indicator"></div>
+              <div class="rounded-full w-2 h-2 bg-[#C4C4C4] transition-all duration-500 js-indicator"></div>
+            </div>
+
+            <!-- Right Arrow -->
+            <button title="next button" class="js-next">
+              <div title="right arrow icon" class="w-12 h-12 bg-[url('/icons/chevron-right.svg')]"></div>
+            </button>
+          </div>
+
+          <p class="text-body-2 text-center text-white pt-16 pb-10">
+            Excess mortality is the number of deaths attributed directly and indirectly to the current crisis that are
+            in addition to deaths that would be expected based on Gaza data from the recent past.
+          </p>
+
+          <footer class="flex flex-col items-center gap-5">
+            <h2 class="text-h2 text-white">For more details, please see our full report:</h2>
+            <div class="flex gap-5">
+              <a href="" class="button button-primary">Download Full Report</a>
+              <a href="" class="button button-inverted">Download Arabic Summary</a>
+            </div>
+          </footer>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="bg-gray-light">
+          <div class="centered flex flex-col items-center gap-10 px-4 pt-20 lg:pt-24">
+            <!-- Flag Icon -->
+            <div class="w-[137px] h-[86px] bg-[url('/icons/flag-icon.svg')] bg-no-repeat bg-cover"></div>
+            <!-- About Card -->
+            <div class="flex flex-col items-center gap-6">
+              <h1 class="text-h1 text-center">About this Initiative</h1>
+              <div class="flex flex-col gap-6 w-3/4">
+                <p class="text-body-1 text-center">
+                  The project is an independent academic collaboration between the London School of Hygiene and Tropical
+                  Medicine and Johns Hopkins University funded by the UK Humanitarian Innovation Hub. It aims to inform
+                  decision-makers by generating scientific estimates of likely health consequences based on different
+                  trajectories of the war.
+                </p>
+                <p class="text-body-1 text-center">
+                  We report mortality as the most downstream, ultimate indicator of health impact, while recognising
+                  that the crisis in Gaza has multidimensional effects.
+                </p>
+                <p class="text-body-1 text-center">
+                  We are committed to transparent, reproducible reporting of our project. To this end, we have prepared
+                  the following sources
+                </p>
+              </div>
+            </div>
+
+            <!-- Cards Wrapper -->
+            <div class="flex flex-col gap-16 py-8 mid-lg:flex-row mid-lg:gap-8 lg:gap-16 lg:py-14">
+              <!-- Card -->
+              <div class="min-h-96 px-4 py-14 sm:p-14 rounded-2xl flex flex-col gap-4 flex-1 border border-primary">
+                <div class="bg-[url('/logos/github-logo.svg')] bg-no-repeat bg-cover w-[65px] h-[65px]"></div>
+                <h2 class="text-h2 text-primary">Github Repo</h2>
+                <p class="text-body-1 text-primary mt-2">Everything is open source and available for public use.</p>
+                <div class="flex-1 flex flex-col-reverse">
+                  <a
+                    href="https://github.com/ghamadi/gaza-project"
+                    class="button button-secondary min-w-max w-full mid-lg:w-fit"
+                  >
+                    Follow us on GitHub
+                  </a>
+                </div>
+              </div>
+
+              <!-- Card -->
+              <div class="min-h-96 px-4 py-14 sm:p-14 rounded-2xl flex flex-col gap-4 flex-1 border border-gray-dark">
+                <span class="tag">Previous Report</span>
+                <h2 class="text-h2 text-gray">War in the Gaza Strip: PUBLIC HEALTH SITUATION ANALYSIS</h2>
+                <p class="text-body-1 text-gray mt-2 leading-6">
+                  The current public health situation analysis (PHSA) concerns the population living within the Gaza
+                  Strip and affected by the acute emergency resulting from large-scale military operations by Israel and
+                  Hamas.
+                </p>
+                <div class="flex-1 flex flex-col-reverse">
+                  <a href="" class="button button-secondary min-w-max w-full mid-lg:w-fit"> Download the Report </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="centered flex flex-wrap justify-center gap-5 pt-20 pb-10 px-4">
+          <div
+            class="h-[275px] min-w-96 mid-lg:max-w-[450px] p-8 flex-1 flex flex-col items-center border border-primary rounded-2xl"
+          >
+            <h2 class="text-h2 text-primary">FAQ</h2>
+            <p class="body-1 text-center text-primary flex-1 pt-5">
+              If you want to know more details about this project you can download our Frequently Asked Questions
+              document.
+            </p>
+            <a href="" class="button button-secondary">Download FAQ</a>
+          </div>
+
+          <div
+            class="h-[275px] min-w-96 mid-lg:max-w-[450px] p-8 flex-1 flex flex-col items-center border border-primary rounded-2xl"
+          >
+            <h2 class="text-h2 text-primary">Methods Annex</h2>
+            <p class="body-1 text-center text-primary flex-1 pt-5">
+              If you want to know more details about this project you can download our Method Annex.
+            </p>
+            <a href="" class="button button-secondary">Download Methods Annex</a>
+          </div>
+
+          <div
+            class="h-[275px] min-w-96 mid-lg:max-w-[450px] p-8 flex-1 flex flex-col items-center border border-primary rounded-2xl"
+          >
+            <h2 class="text-h2 text-primary">Title here</h2>
+            <p class="body-1 text-center text-primary flex-1 pt-5">
+              If you want to know more details download our Repository of data and software code used to generate our
+              results.
+            </p>
+            <a href="" class="button button-secondary">Download</a>
+          </div>
+        </section>
+      </main>
+      <footer class="bg-primary text-center text-white px-4 py-9 mid-lg:py-6">
+        For reference, feel free to contact <span class="font-bold">email@email.com</span>
+      </footer>
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

@@ -11,7 +11,7 @@
 }
 
 .button-primary {
-  @apply bg-primary text-white;
+  @apply bg-primary text-white border-primary;
 }
 
 .button-secondary {
@@ -31,5 +31,5 @@
 }
 
 .centered {
-  @apply lg:max-w-[1383px] w-full lg:mx-auto;
+  @apply w-full lg:max-w-[1383px] lg:mx-auto;
 }
