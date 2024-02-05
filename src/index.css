@@ -51,3 +51,8 @@
   @apply lg:w-[10px];
   @apply lg:h-[10px];
 }
+
+.splide__pagination li {
+  @apply flex;
+  @apply items-center;
+}
