@@ -29,17 +29,35 @@
   </script>
   <body>
     <div id="root">
+      <!-- Used to scroll to top in the menu -->
+      <div id="project"></div>
       <!-- Top Menu -->
-      <nav class="h-[100px] bg-white md:sticky top-0 z-10 w-full border-b border-gray-light">
-        <div class="centered px-4 h-full">
-          <div class="flex items-center justify-center h-full relative">
-            <ul class="hidden md:flex items-center centered xl:justify-center gap-10 lg:gap-14">
-              <li><a href="#" class="lg:text-lg hover:underline">Our Project</a></li>
-              <li><a href="#projections" class="lg:text-lg hover:underline">Projections</a></li>
-              <li><a href="#about" class="lg:text-lg hover:underline">About</a></li>
-              <li><a href="#faq" class="lg:text-lg hover:underline">FAQ</a></li>
+      <nav class="js-nav nav-list accordion h-[100px] bg-white md:sticky top-0 z-10 w-full border-b border-gray-light">
+        <div class="md:centered md:px-4 h-full">
+          <div class="flex items-center md:justify-center h-full relative">
+            <button
+              id="mobile-nav-menu-button"
+              type="button"
+              title="Navigation Menu Button"
+              aria-label="Navigation Menu Button"
+              aria-controls="nav-list"
+              aria-expanded="false"
+              class="inline md:hidden bg-[url('/icons/nav-icon.svg')] ml-4 bg-no-repeat bg-center p-5 rounded-full hover:bg-gray-light active:brightness-[95%] transition-all duration-150 js-nav-button"
+            ></button>
+
+            <ul
+              id="nav-list"
+              aria-labelledby="mobile-nav-menu-button"
+              class="accordion-content max-md:absolute max-md:w-full max-md:top-[100%] max-md:px-4 max-md:bg-white md:flex items-center centered xl:justify-center gap-10 lg:gap-14"
+            >
+              <li><a href="#project" class="max-md:block max-md:py-2 lg:text-lg hover:underline">Our Project</a></li>
               <li>
-                <a class="lg:text-lg hover:underline" href="#" target="_blank">
+                <a href="#projections" class="max-md:block max-md:py-2 lg:text-lg hover:underline">Projections</a>
+              </li>
+              <li><a href="#about" class="max-md:block max-md:py-2 lg:text-lg hover:underline">About</a></li>
+              <li><a href="#faq" class="max-md:block max-md:py-2 lg:text-lg hover:underline">FAQ</a></li>
+              <li>
+                <a class="max-md:block max-md:py-2 lg:text-lg hover:underline" href="#" target="_blank">
                   <span class="flex items-center">
                     GitHub
                     <i class="inline-block ml-1 w-5 h-5 bg-[url(/icons/external-link.svg)]"></i>
@@ -47,7 +65,7 @@
                 </a>
               </li>
             </ul>
-            <a href="#" class="button button-primary absolute right-0 md:inline">Download Report</a>
+            <a href="#" class="button button-primary absolute right-4 md:inline">Download Report</a>
           </div>
         </div>
       </nav>
@@ -64,13 +82,20 @@
           <div class="flex gap-2 sm:gap-7 flex-[4] max-w-[435px] sm:justify-center md:justify-end">
             <div class="flex items-center justify-center flex-1 px-4 rounded-2xl min-w-[140px] aspect-square bg-white">
               <img
+                width="248"
+                height="118"
                 src="/logos/london-school-of-hygiene.svg"
                 alt="London School of Hygiene &amp; Tropical Medicine logo"
               />
             </div>
 
             <div class="flex items-center justify-center flex-1 px-4 rounded-2xl min-w-[140px] aspect-square bg-white">
-              <img src="/logos/johns-hopkins-university.svg" alt="Johns Hopkins University logo" />
+              <img
+                width="166"
+                height="36"
+                src="/logos/johns-hopkins-university.svg"
+                alt="Johns Hopkins University logo"
+              />
             </div>
           </div>
         </div>
@@ -112,11 +137,15 @@
 
             <div class="relative flex-[1.3] hidden xl:block">
               <img
+                width="435"
+                height="563"
                 src="/images/report-cover.svg"
                 alt="A preview of the report's cover. The report cover has the title Crisis in Gaza: Scenario-Based Health Impact Projections"
                 class="absolute shadow-md right-48 top-28 w-[435px]"
               />
               <img
+                width="435"
+                height="563"
                 src="/images/report-cover-methods.svg"
                 alt="A preview of the methods annex cover. The report cover has the title Crisis in Gaza: Scenario-Based Health Impact Projections: Methods Annex"
                 class="absolute shadow-md right-0 top-2 w-[435px]"
@@ -247,7 +276,7 @@
         </section>
 
         <!-- FAQ Section -->
-        <section id="faq" class="centered px-4 flex flex-col items-center gap-4 w-full py-10 lg:py-18">
+        <section id="faq" class="faq centered px-4 flex flex-col items-center gap-4 w-full py-10 lg:py-18">
           <h2 class="text-h1">FAQ</h2>
 
           <!-- Accordions -->
@@ -377,7 +406,8 @@
         </section>
       </main>
       <footer class="bg-primary text-center text-white px-4 py-9 mid-lg:py-6">
-        For reference, feel free to contact <span class="font-bold">email@email.com</span>
+        All queries relating to the project should be directed to
+        <a href="mailto:info@gaza-projections.org" class="font-bold">info@gaza-projections.org</a>.
       </footer>
     </div>
     <script type="module" src="/src/main.js"></script>

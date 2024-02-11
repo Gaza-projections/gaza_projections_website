@@ -66,20 +66,20 @@
 
 /* Accordion */
 
-.accordion .accordion-title-icon {
+.faq .accordion .accordion-title-icon {
   @apply transition;
 }
 
-.accordion button[aria-expanded='false'] .accordion-title-icon {
+.faq .accordion button[aria-expanded='false'] .accordion-title-icon {
   @apply bg-[url('/icons/chevron-down-green.svg')];
 }
 
-.accordion button[aria-expanded='true'] .accordion-title-icon {
+.faq .accordion button[aria-expanded='true'] .accordion-title-icon {
   @apply bg-primary;
   @apply bg-[url('/icons/chevron-up-white.svg')];
 }
 
-.accordion .accordion-content--open {
+.faq .accordion .accordion-content--open {
   animation: fadeIn 0.5s ease-out;
 }
 
@@ -89,5 +89,19 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+.nav-list.accordion .accordion-content--open {
+  animation: slideRight 0.2s ease-out;
+}
+
+/* keyframes to slide down */
+@keyframes slideRight {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateY(0);
   }
 }
