@@ -12,4 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   accordions.forEach((accordionEl) => {
     new Accordion(accordionEl);
   });
+
+  const nav = document.querySelector('nav');
+  new Accordion(nav);
 });
