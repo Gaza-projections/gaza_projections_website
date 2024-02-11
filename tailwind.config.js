@@ -24,7 +24,10 @@ export default {
         '4xl': '50px'
       },
       colors: {
-        primary: '#28574E',
+        primary: {
+          DEFAULT: '#28574E',
+          dark: '#1C3D36'
+        },
         gray: {
           DEFAULT: '#4E4E4E',
           dark: '#2D2C2C',
