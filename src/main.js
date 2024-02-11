@@ -13,6 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
     new Accordion(accordionEl);
   });
 
-  const nav = document.querySelector('nav');
+  const nav = document.querySelector('.js-nav');
   new Accordion(nav);
 });
