@@ -34,6 +34,8 @@
   @apply w-full lg:max-w-[1383px] lg:mx-auto;
 }
 
+/* Carousel */
+
 .splide__pagination__page {
   @apply rounded-full;
   @apply w-4;
@@ -55,4 +57,32 @@
 .splide__pagination li {
   @apply flex;
   @apply items-center;
+}
+
+/* Accordion */
+
+.accordion .accordion-title-icon {
+  @apply transition;
+}
+
+.accordion button[aria-expanded='false'] .accordion-title-icon {
+  @apply bg-[url('/icons/chevron-down-green.svg')];
+}
+
+.accordion button[aria-expanded='true'] .accordion-title-icon {
+  @apply bg-primary;
+  @apply bg-[url('/icons/chevron-up-white.svg')];
+}
+
+.accordion .accordion-content--open {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
