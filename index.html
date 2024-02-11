@@ -29,53 +29,58 @@
   </script>
   <body>
     <div id="root">
+      <!-- Top Menu -->
       <nav class="h-[100px] bg-white md:sticky top-0 z-10 w-full border-b border-gray-light">
-        <div class="centered flex items-center centered justify-center gap-16 h-full">
-          <a href="#" class="text-lg underline text-primary font-bold">About</a>
-          <a class="hover:underline" href="https://github.com/Gaza-projections/gaza_projections_website" target="_blank"
-            >GitHub</a
-          >
-          <div class="hidden md:flex absolute right-16 h-full items-center">
-            <a href="" class="button button-primary"> Download Report </a>
+        <div class="centered px-4 h-full">
+          <div class="flex items-center justify-center h-full relative">
+            <ul class="hidden md:flex items-center centered xl:justify-center gap-10 lg:gap-14">
+              <li><a href="#" class="lg:text-lg hover:underline">Our Project</a></li>
+              <li><a href="#projections" class="lg:text-lg hover:underline">Projections</a></li>
+              <li><a href="#about" class="lg:text-lg hover:underline">About</a></li>
+              <li><a href="#faq" class="lg:text-lg hover:underline">FAQ</a></li>
+              <li>
+                <a class="lg:text-lg hover:underline" href="#" target="_blank">
+                  <span class="flex items-center">
+                    GitHub
+                    <i class="inline-block ml-1 w-5 h-5 bg-[url(/icons/external-link.svg)]"></i>
+                  </span>
+                </a>
+              </li>
+            </ul>
+            <a href="#" class="button button-primary absolute right-0 md:inline">Download Report</a>
           </div>
         </div>
       </nav>
 
-      <main>
-        <!-- Title Section -->
-        <div class="bg-gray-light">
-          <section
-            class="centered px-2 sm:px-16 py-10 min-h-[283px] flex flex-col md:flex-row gap-10 justify-between items-center"
+      <!-- Title Section -->
+      <header class="bg-gray-light">
+        <div class="centered px-4 py-10 min-h-[283px] flex flex-col md:flex-row gap-10 justify-between items-center">
+          <h1
+            class="flex-[5] max-w-[608px] px-4 md:px-0 text-center md:text-left text-4xl md:text-5xl leading-[48px] font-bold"
           >
-            <h1
-              class="flex-[5] max-w-[608px] px-4 md:px-0 text-center md:text-left text-4xl md:text-5xl leading-[48px] font-bold"
-            >
-              Crisis in Gaza: Scenario-Based Health Impact Projections
-            </h1>
+            Crisis in Gaza: Scenario-Based Health Impact Projections
+          </h1>
 
-            <div class="flex gap-2 sm:gap-7 flex-[4] max-w-[435px] sm:justify-center md:justify-end px-4">
-              <div
-                class="flex items-center justify-center flex-1 px-4 rounded-2xl min-w-[140px] aspect-square bg-white"
-              >
-                <img
-                  src="/logos/london-school-of-hygiene.svg"
-                  alt="London School of Hygiene &amp; Tropical Medicine logo"
-                />
-              </div>
-
-              <div
-                class="flex items-center justify-center flex-1 px-4 rounded-2xl min-w-[140px] aspect-square bg-white"
-              >
-                <img src="/logos/johns-hopkins-university.svg" alt="Johns Hopkins University logo" />
-              </div>
+          <div class="flex gap-2 sm:gap-7 flex-[4] max-w-[435px] sm:justify-center md:justify-end">
+            <div class="flex items-center justify-center flex-1 px-4 rounded-2xl min-w-[140px] aspect-square bg-white">
+              <img
+                src="/logos/london-school-of-hygiene.svg"
+                alt="London School of Hygiene &amp; Tropical Medicine logo"
+              />
             </div>
-          </section>
-        </div>
 
+            <div class="flex items-center justify-center flex-1 px-4 rounded-2xl min-w-[140px] aspect-square bg-white">
+              <img src="/logos/johns-hopkins-university.svg" alt="Johns Hopkins University logo" />
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
         <!-- Intro Section -->
         <section class="bg-primary mb-28">
-          <div class="centered py-16 flex">
-            <div class="flex-1 flex flex-col gap-8 px-8">
+          <div class="centered px-4 py-16 flex">
+            <div class="flex-1 flex flex-col gap-8">
               <h2 class="text-h2 text-white">Welcome to Our Project</h2>
               <p class="text-body-1 text-white">
                 Since 7 October 2023, armed conflict in the Gaza Strip, Palestine has led to a large number of traumatic
@@ -99,21 +104,21 @@
                 evolution of the crisis, improved data, or new models.
               </p>
 
-              <div class="flex gap-4 pt-8">
-                <a href="" class="button button-inverted"> Download Report </a>
-                <a href="" class="button button-inverted"> Download Methods Annex </a>
+              <div class="flex max-sm:flex-col gap-4 pt-8">
+                <a href="#" class="button button-inverted"> Download Report </a>
+                <a href="#" class="button button-inverted"> Download Methods Annex </a>
               </div>
             </div>
 
             <div class="relative flex-[1.3] hidden xl:block">
               <img
                 src="/images/report-cover.svg"
-                alt="Report Cover"
+                alt="A preview of the report's cover. The report cover has the title Crisis in Gaza: Scenario-Based Health Impact Projections"
                 class="absolute shadow-md right-48 top-28 w-[435px]"
               />
               <img
                 src="/images/report-cover-methods.svg"
-                alt="Report Cover - Methods"
+                alt="A preview of the methods annex cover. The report cover has the title Crisis in Gaza: Scenario-Based Health Impact Projections: Methods Annex"
                 class="absolute shadow-md right-0 top-2 w-[435px]"
               />
             </div>
@@ -121,77 +126,79 @@
         </section>
 
         <!-- Projections Carousel Section -->
-        <section class="centered px-10 lg:px-24 py-14 bg-gray-dark lg:rounded-2xl">
-          <h2 class="text-h2 text-center text-white">A snapshot of our current projections</h2>
-          <p class="mt-5 text-body-2 text-center text-white">
-            The increase in malnutrition is analysed as an underlying cause. We anticipate xx% yy% and zz% acute
-            malnutrition in the ceasefire, status quo, and escalation scenarios.
-          </p>
+        <section id="projections" class="centered px-4 py-14 bg-gray-dark lg:rounded-2xl">
+          <div class="lg:px-24">
+            <h2 class="text-h2 text-center text-white">A snapshot of our current projections</h2>
+            <p class="mt-5 text-body-2 text-center text-white">
+              The increase in malnutrition is analysed as an underlying cause. We anticipate xx% yy% and zz% acute
+              malnutrition in the ceasefire, status quo, and escalation scenarios.
+            </p>
 
-          <!-- Carousel -->
-          <div class="splide js-carousel" role="group" aria-label="Slides">
-            <div class="relative flex items-center justify-center gap-7 py-12">
-              <div class="splide__arrows hidden lg:block">
-                <button
-                  title="Previous icon"
-                  type="button"
-                  class="splide__arrow splide__arrow--prev disabled:opacity-40 disabled:pointer-events-none hover:bg-[#7e7d7d] rounded-full p-2 absolute left-0 transition-all"
-                >
-                  <div class="w-12 h-12 bg-[url('/icons/chevron-left.svg')]"></div>
-                </button>
-                <button
-                  title="Next"
-                  type="button"
-                  class="splide__arrow splide__arrow--next disabled:opacity-40 disabled:pointer-events-none hover:bg-[#7e7d7d] rounded-full p-2 absolute right-0 transition-all"
-                >
-                  <div class="w-12 h-12 bg-[url('/icons/chevron-right.svg')]"></div>
-                </button>
-              </div>
-              <div class="relative w-full md:mx-20">
-                <div class="splide__track">
-                  <!-- Slides -->
-                  <div class="splide__list">
-                    <figure class="splide__slide">
-                      <img src="/images/figure.png" class="w-full" alt="Figure 1" />
-                    </figure>
-                    <figure class="splide__slide">
-                      <img src="/images/figure.png" class="w-full" alt="Figure 2" />
-                    </figure>
-                    <figure class="splide__slide">
-                      <img src="/images/figure.png" class="w-full" alt="Figure 3" />
-                    </figure>
+            <!-- Carousel -->
+            <div class="splide js-carousel" role="group" aria-label="Slides">
+              <div class="relative flex items-center justify-center gap-7 py-12">
+                <div class="splide__arrows hidden lg:block">
+                  <button
+                    title="Previous icon"
+                    type="button"
+                    class="splide__arrow splide__arrow--prev disabled:opacity-40 disabled:pointer-events-none hover:bg-[#7e7d7d] rounded-full p-2 absolute left-0 transition-all"
+                  >
+                    <div class="w-12 h-12 bg-[url('/icons/chevron-left.svg')]"></div>
+                  </button>
+                  <button
+                    title="Next"
+                    type="button"
+                    class="splide__arrow splide__arrow--next disabled:opacity-40 disabled:pointer-events-none hover:bg-[#7e7d7d] rounded-full p-2 absolute right-0 transition-all"
+                  >
+                    <div class="w-12 h-12 bg-[url('/icons/chevron-right.svg')]"></div>
+                  </button>
+                </div>
+                <div class="relative w-full md:mx-20">
+                  <div class="splide__track">
+                    <!-- Slides -->
+                    <div class="splide__list">
+                      <figure class="splide__slide">
+                        <img src="/images/figure.png" class="w-full" alt="Figure 1" />
+                      </figure>
+                      <figure class="splide__slide">
+                        <img src="/images/figure.png" class="w-full" alt="Figure 2" />
+                      </figure>
+                      <figure class="splide__slide">
+                        <img src="/images/figure.png" class="w-full" alt="Figure 3" />
+                      </figure>
+                    </div>
                   </div>
                 </div>
+                <!-- Indicators -->
+                <div
+                  class="splide__pagination absolute bottom-2 left-0 right-0 flex items-center justify-center gap-5"
+                ></div>
               </div>
-              <!-- Indicators -->
-              <div
-                class="splide__pagination absolute bottom-2 left-0 right-0 flex items-center justify-center gap-5"
-              ></div>
             </div>
+
+            <p class="text-body-2 text-center text-white pt-16 pb-10">
+              Excess mortality is the number of deaths attributed directly and indirectly to the current crisis that are
+              in addition to deaths that would be expected based on Gaza data from the recent past.
+            </p>
+
+            <footer class="flex flex-col items-center gap-5">
+              <h2 class="text-h2 text-white">For more details, please see our full report:</h2>
+              <div class="flex max-sm:flex-col gap-5">
+                <a href="#" class="button button-primary">Download Full Report</a>
+                <a href="#" class="button button-inverted">Download Arabic Summary</a>
+              </div>
+            </footer>
           </div>
-
-          <p class="text-body-2 text-center text-white pt-16 pb-10">
-            Excess mortality is the number of deaths attributed directly and indirectly to the current crisis that are
-            in addition to deaths that would be expected based on Gaza data from the recent past.
-          </p>
-
-          <footer class="flex flex-col items-center gap-5">
-            <h2 class="text-h2 text-white">For more details, please see our full report:</h2>
-            <div class="flex gap-5">
-              <a href="" class="button button-primary">Download Full Report</a>
-              <a href="" class="button button-inverted">Download Arabic Summary</a>
-            </div>
-          </footer>
         </section>
 
         <!-- About Section -->
-        <section class="bg-gray-light">
-          <div class="centered flex flex-col items-center gap-10 px-4 pt-20 lg:pt-24">
+        <section class="bg-gray-light" id="about">
+          <div class="centered px-4 flex flex-col items-center gap-10 pt-20 lg:pt-24">
             <!-- Flag Icon -->
             <div class="w-[137px] h-[86px] bg-[url('/icons/flag-icon.svg')] bg-no-repeat bg-cover"></div>
             <!-- About Card -->
             <div class="flex flex-col items-center gap-6">
-              <h1 class="text-h1 text-center">About this Initiative</h1>
+              <h2 class="text-h1 text-center">About this Project</h2>
               <div class="flex flex-col gap-6 w-3/4">
                 <p class="text-body-1 text-center">
                   The project is an independent academic collaboration between the London School of Hygiene and Tropical
@@ -218,12 +225,7 @@
                 <h2 class="text-h2 text-primary">Github Repo</h2>
                 <p class="text-body-1 text-primary mt-2">Everything is open source and available for public use.</p>
                 <div class="flex-1 flex flex-col-reverse">
-                  <a
-                    href="https://github.com/ghamadi/gaza-project"
-                    class="button button-secondary min-w-max w-full mid-lg:w-fit"
-                  >
-                    Follow us on GitHub
-                  </a>
+                  <a href="#" class="button button-secondary min-w-max w-full mid-lg:w-fit"> Follow us on GitHub </a>
                 </div>
               </div>
 
@@ -245,8 +247,8 @@
         </section>
 
         <!-- FAQ Section -->
-        <section class="centered flex flex-col items-center gap-4 w-full py-10 lg:py-28">
-          <h1 class="text-h1">FAQ</h1>
+        <section id="faq" class="centered px-4 flex flex-col items-center gap-4 w-full py-10 lg:py-18">
+          <h2 class="text-h1">FAQ</h2>
 
           <!-- Accordions -->
 
@@ -255,7 +257,7 @@
             class="accordion w-full js-accordion border border-gray-100 p-10 rounded-lg"
             style="box-shadow: 0px 20px 95px 0px #c9cbcc4d"
           >
-            <h2 class="js-accordion-title">
+            <h3 class="js-accordion-title">
               <button
                 type="button"
                 aria-expanded="false"
@@ -268,7 +270,7 @@
                 ></i>
                 <span class="font-semibold text-lg">What is the aim of this project?</span>
               </button>
-            </h2>
+            </h3>
             <div
               id="accordionSectionId1"
               role="region"
@@ -294,7 +296,7 @@
             class="accordion w-full js-accordion border border-gray-100 p-10 rounded-lg"
             style="box-shadow: 0px 20px 95px 0px #c9cbcc4d"
           >
-            <h2 class="js-accordion-title">
+            <h3 class="js-accordion-title">
               <button
                 type="button"
                 aria-expanded="false"
@@ -307,7 +309,7 @@
                 ></i>
                 <span class="font-semibold text-lg">What will the project deliver?</span>
               </button>
-            </h2>
+            </h3>
             <div
               id="accordionSectionId2"
               role="region"
@@ -329,7 +331,7 @@
             class="accordion w-full js-accordion border border-gray-100 p-10 rounded-lg"
             style="box-shadow: 0px 20px 95px 0px #c9cbcc4d"
           >
-            <h2 class="js-accordion-title">
+            <h3 class="js-accordion-title">
               <button
                 type="button"
                 aria-expanded="false"
@@ -342,7 +344,7 @@
                 ></i>
                 <span class="font-semibold text-lg">Who is implementing this project?</span>
               </button>
-            </h2>
+            </h3>
             <div
               id="accordionSectionId3"
               role="region"
