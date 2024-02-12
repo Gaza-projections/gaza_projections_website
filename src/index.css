@@ -91,7 +91,7 @@
   display: flex;
   flex-direction: column;
   align-items: left;
-  color: #FF0000;
+  color: #ff0000;
 }
 
 @media screen and (max-width: 350px) {
@@ -100,7 +100,7 @@
   }
 
   .captcha-container.ml-error iframe {
-    border: solid 1px #FF0000;
+    border: solid 1px #ff0000;
   }
 }
 
@@ -118,13 +118,19 @@
   }
 
   .captcha-container.ml-error {
-    border: solid 1px #FF0000;
+    @apply border-2;
+    @apply border-red-500;
     display: flex;
     justify-content: center;
-    background-color: #F9F9F9;
+    background-color: #f9f9f9;
     padding: 8px 5px 3px;
     transition: padding 0.5s ease;
   }
+}
+
+.ml-field-email.ml-error {
+  @apply border-2;
+  @apply border-red-500;
 }
 
 @keyframes fadeIn {
@@ -136,6 +142,7 @@
   }
 }
 
+/** Top Nav */
 .nav-list.accordion .accordion-content--open {
   animation: slideRight 0.2s ease-out;
 }
