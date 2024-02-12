@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
     <link rel="shortcut icon" type="image/svg" href="/icons/flag-icon.svg" />
     <title>Crisis in Gaza: Scenario-Based Health Impact Projections</title>
     <meta
@@ -415,6 +414,7 @@
               action="https://assets.mailerlite.com/jsonp/817099/forms/112449172135741241/subscribe" 
               data-code=""
               method="post" 
+              role="form"
               target="_blank"
             >
               <h2 class="text-h2">Get the Latest Updates</h2>
@@ -426,7 +426,8 @@
                   <div class="flex rounded-full bg-white p-2 shadow-md w-[270px] x-sm:w-[360px] sm:w-[600px] h-[80px] mb-6" id="sign-up-inputs">
                     <!-- Input -->
                     <input
-                      aria-label="email" aria-required="true"
+                      aria-label="Enter your email" 
+                      aria-required="true"
                       data-inputmask=""
                       name="fields[email]"
                       type="email" placeholder="Enter your email" 
@@ -436,8 +437,11 @@
                     />
                     <!-- Submit -->
                     <input tabindex="-1" type="hidden" name="ml-submit" value="1">
-                    <button type="submit"
-                      class="bg-primary primary button">
+                    <button 
+                      type="submit"
+                      aria-label="Subscribe to project updates"
+                      class="bg-primary primary button"
+                    >
                       <span class="hidden x-sm:inline-block">Subscribe</span>
                       <span class="x-sm:hidden">+</span>
                     </button>
@@ -451,14 +455,14 @@
                   </div>
 
                   <!-- Begin Captcha -->
-                  <div class="captcha-container ml-validate-required hide-on-success" id="sign-up-captcha" style="float: left;">
-                    <script src="https://www.google.com/recaptcha/api.js"></script>
+                  <div class="captcha-container ml-validate-required hide-on-success" id="sign-up-captcha">
+                    <script async src="https://www.google.com/recaptcha/api.js"></script>
                     <div class="g-recaptcha" data-sitekey="6Lf1KHQUAAAAAFNKEX1hdSWCS3mRMv4FlFaNslaD"></div>
-                    <div class="validation-text hidden font-roboto text-[13px]">Please confirm you're not a robot</div>
+                    <div class="validation-text hidden text-[13px]" aria-label="Captcha validation missing" >Please confirm you're not a robot</div>
                   </div>
 
                   <!-- Success -->
-                  <div class="ml-form-successBody row-success bg-gray-light text-gray-dark rounded-lg p-6" id="sign-up-success" style="display:none;">
+                  <div class="ml-form-successBody bg-gray-light text-gray-dark rounded-lg p-6" id="sign-up-success" style="display:none;">
                     <div class="ml-form-successContent">
                       <h4 class="font-bold text-lg">Thank you!</h4>
                       <p class="pt-2">You have successfully joined our subscriber list.</p>
@@ -476,30 +480,30 @@
       </footer>
     </div>
     <script type="module" src="/src/main.js"></script>
+    <script>
+      function ml_webform_success_12133001() {
+        let successRow = document.getElementById('sign-up-success');
+        let inputs = document.getElementById('sign-up-inputs');
+        let captcha = document.getElementById('sign-up-captcha');
+
+        if (successRow) {
+          successRow.style.display = 'block';
+        }
+
+        if (inputs) {
+          inputs.style.display = 'none';
+        }
+
+        if (captcha) {
+          captcha.style.display = 'none';
+        }
+      }
+    </script>
+    <script src="https://groot.mailerlite.com/js/w/webforms.min.js?v2d8fb22bb5b3677f161552cd9e774127"
+      type="text/javascript"></script>
+    <script>
+      fetch("https://assets.mailerlite.com/jsonp/817099/forms/112449172135741241/takel")
+    </script>
   </body>
 </html>
 
-<script>
-  function ml_webform_success_12133001() {
-    let successRow = document.getElementById('sign-up-success');
-    let inputs = document.getElementById('sign-up-inputs'); 
-    let captcha = document.getElementById('sign-up-captcha'); 
-
-    if (successRow) {
-      successRow.style.display = 'block';
-    }
-
-    if (inputs) {
-      inputs.style.display = 'none';
-    }
-
-    if (captcha) {
-      captcha.style.display = 'none';
-    }
-  }
-</script>
-<script src="https://groot.mailerlite.com/js/w/webforms.min.js?v2d8fb22bb5b3677f161552cd9e774127"
-  type="text/javascript"></script>
-<script>
-  fetch("https://assets.mailerlite.com/jsonp/817099/forms/112449172135741241/takel")
-</script>
