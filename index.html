@@ -431,7 +431,7 @@
                       data-inputmask=""
                       name="fields[email]"
                       type="email" placeholder="Enter your email" 
-                      class="x-sm:flex-1 w-[188px] rounded-l-full pl-4 text-gray-700 outline-none" 
+                      class="x-sm:flex-1 w-[172px] rounded-l-full pl-4 text-gray-700 outline-none" 
                       autocomplete="email"
                       value=""
                     />
@@ -440,10 +440,10 @@
                     <button 
                       type="submit"
                       aria-label="Subscribe to project updates"
-                      class="bg-primary primary button"
+                      class="bg-primary primary button px-2"
                     >
                       <span class="hidden x-sm:inline-block">Subscribe</span>
-                      <span class="x-sm:hidden">+</span>
+                      <img src="/icons/envelope.svg" class="x-sm:hidden"></img>
                     </button>
                     <!-- Loading -->
                     <button disabled="disabled" style="display: none;" type="button" class="loading">
@@ -458,11 +458,11 @@
                   <div class="captcha-container ml-validate-required hide-on-success" id="sign-up-captcha">
                     <script async src="https://www.google.com/recaptcha/api.js"></script>
                     <div class="g-recaptcha" data-sitekey="6Lf1KHQUAAAAAFNKEX1hdSWCS3mRMv4FlFaNslaD"></div>
-                    <div class="validation-text hidden text-[13px]" aria-label="Captcha validation missing" >Please confirm you're not a robot</div>
+                    <div class="validation-text hidden text-[13px]" aria-label="Captcha validation missing" aria-live="polite">Please confirm you're not a robot</div>
                   </div>
 
                   <!-- Success -->
-                  <div class="ml-form-successBody bg-gray-light text-gray-dark rounded-lg p-6" id="sign-up-success" style="display:none;">
+                  <div class="ml-form-successBody bg-gray-light text-gray-dark rounded-lg p-6" id="sign-up-success" style="display:none;" aria-live="polite">
                     <div class="ml-form-successContent">
                       <h4 class="font-bold text-lg">Thank you!</h4>
                       <p class="pt-2">You have successfully joined our subscriber list.</p>
