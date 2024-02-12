@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" type="image/svg" href="/icons/flag-icon.svg" />
     <title>Crisis in Gaza: Scenario-Based Health Impact Projections</title>
     <meta
@@ -16,6 +17,24 @@
     different scenarios."
     />
   </head>
+
+  <style type="text/css">
+  .ml-form-embedSubmitLoad {
+  border: 6px solid #f3f3f3; /* Light grey background */
+  border-top: 6px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+  </style>
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-N3FPXE95K7"></script>
   <script>
@@ -404,7 +423,132 @@
             </div>
           </div>
         </section>
-      </main>
+
+        <!-- Subscribe Section -->
+        <section class="centered w-full pt-20 pb-10 px-4">
+          <div id="mlb2-12133001" class="ml-form-embedContainer ml-subscribe-form ml-subscribe-form-12133001">
+            <form 
+              class="row-form flex flex-col items-center justify-between gap-12 p-12 px-4 sm:px-40 bg-gray-dark text-white lg:rounded-2xl text-center"
+              action="https://assets.mailerlite.com/jsonp/817099/forms/112449172135741241/subscribe" 
+              data-code=""
+              method="post" 
+              target="_blank"
+            >
+            
+              <h2 class="text-h2">Get the Latest Updates</h2>
+              <p>We welcome feedback and enquiries, and will do our best to respond to reasonable requests. Please write us at
+              <a class="font-semibold underline" href="mailto:info@gaza-projections.com">info@gaza-projections.com</a>.</p>
+                <p>If you would like to sign up to automatically receive project updates, please do so here:</p>
+                  
+                  <div class="centered flex flex-col items-center justify-center min-h-[220px] rounded-2xl" id="sign-up-inputs-container">
+                    <div class="flex rounded-full bg-white p-2 shadow-md w-[270px] x-sm:w-[360px] sm:w-[600px] h-[80px] mb-6 hide-on-success">
+                      <input 
+                        aria-label="email" aria-required="true"
+                        data-inputmask=""
+                        name="fields[email]"
+                        type="email" placeholder="Enter your email" 
+                        class="x-sm:flex-1 w-[188px] rounded-l-full pl-4 text-gray-700 outline-none" 
+                        autocomplete="email"
+                        value=""
+                      />
+
+                      <input tabindex="-1" type="hidden" name="ml-submit" value="1">
+                      <button type="submit"
+                        class="bg-primary primary button">
+                        <span class="hidden x-sm:inline-block">Subscribe</span>
+                        <span class="x-sm:hidden">+</span>
+                      </button>
+                      <!-- <div class="ml-form-embedSubmitLoad"></div> -->
+                      <!-- Loading -->
+                      <button disabled="disabled" style="display: none;" type="button" class="loading">
+                        <div class="ml-form-embedSubmitLoad"></div>
+                        <span class="sr-only">Loading...</span>
+                      </button>
+                      <input tabindex="-1" type="hidden" name="anticsrf" value="true" />
+                    </div>
+
+                    <!-- Begin Captcha -->
+                    <div class=" ml-form-recaptcha ml-validate-required hide-on-success" style="float: left;">
+                      <style type="text/css">
+                        .ml-form-recaptcha {
+                          margin-bottom: 20px;
+                          display: flex;
+                          flex-direction: column;
+                          align-items: left;
+                          color: #ff0000;
+                        }
+
+                        @media screen and (min-width: 350px) {
+                          .ml-form-recaptcha.ml-error .validation-text {
+                            display: block;
+                            transition: display 0.5s ease;
+                          }
+
+                          .ml-form-recaptcha.ml-error {
+                            border: solid 1px #ff0000;
+                            display: flex;
+                            justify-content: center;
+                            background-color: #f9f9f9;
+                            padding: 8px 5px 3px;
+                            transition: padding 0.5s ease;
+                          }
+                        }
+
+                        @media screen and (max-width: 350px) {
+                          .ml-form-recaptcha.ml-error {
+                            /* padding: 8px 5px 3px; */
+                            padding: 0;
+                          }
+
+                          .ml-form-recaptcha.ml-error iframe {
+                            border: solid 1px #ff0000;
+                          }
+                        }
+
+                        @media screen and (max-width: 400px) {
+                          .g-recaptcha {
+                            transform: scale(0.78);
+                            -webkit-transform: scale(0.78);
+                          }
+                        }
+                    
+                        @media screen and (max-width: 480px) {
+                          /* .ml-form-recaptcha {
+                            width: 220px !important
+                          } */
+                    
+                          .g-recaptcha {
+                            /* transform: scale(0.78);
+                            -webkit-transform: scale(0.78);
+                            transform-origin: 0 0;
+                            -webkit-transform-origin: 0 0; */
+                          }
+                        }
+                      </style>
+                      <script src="https://www.google.com/recaptcha/api.js"></script>
+                      <div class="g-recaptcha" data-sitekey="6Lf1KHQUAAAAAFNKEX1hdSWCS3mRMv4FlFaNslaD"></div>
+                      <div class="validation-text hidden font-roboto text-[13px]">Please confirm you're not a robot</div>
+                    </div>
+                    <!-- End Captcha -->
+
+                    <!-- Success -->
+                    <div class="ml-form-successBody row-success bg-gray-light text-gray-dark rounded-lg p-6" style="display:none;">
+                    
+                      <div class="ml-form-successContent">
+                        <h4 class="font-bold text-lg">Thank you!</h4>
+                        <p class="pt-2">You have successfully joined our subscriber list.</p>
+                      </div>
+                    
+                    </div>
+                  </div>
+
+            </form>
+          </div>
+        </section>
+        
+        
+
+      <!-- Footer Section -->
       <footer class="bg-primary text-center text-white px-4 py-9 mid-lg:py-6">
         All queries relating to the project should be directed to
         <a href="mailto:info@gaza-projections.org" class="font-bold">info@gaza-projections.org</a>.
@@ -413,3 +557,19 @@
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
+
+<script>
+  function ml_webform_success_12133001() {
+    var $ = ml_jQuery || jQuery;
+    $('.ml-subscribe-form-12133001 .row-success').show();
+    $('.ml-subscribe-form-12133001 .hide-on-success').hide();
+    // $('#sign-up-inputs-container').addClass('bg-gray-light');
+    // $('#sign-up-inputs-container').addClass('text-gray-dark');
+    // $('#sign-up-inputs-container').addClass('p-[20px]');
+  }
+</script>
+<script src="https://groot.mailerlite.com/js/w/webforms.min.js?v2d8fb22bb5b3677f161552cd9e774127"
+  type="text/javascript"></script>
+<script>
+  fetch("https://assets.mailerlite.com/jsonp/817099/forms/112449172135741241/takel")
+</script>

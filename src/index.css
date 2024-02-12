@@ -7,7 +7,7 @@
 }
 
 .button {
-  @apply px-7 py-3 border rounded-4xl font-medium text-center transition-all duration-150 active:bg-primary-dark;
+  @apply px-7 py-3 border rounded-4xl font-medium text-center transition-all duration-150 active:bg-primary-dark flex items-center justify-center;
 }
 
 .button:hover:not(:active) {
