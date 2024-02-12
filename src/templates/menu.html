@@ -1,0 +1,39 @@
+<nav class="js-nav nav-list accordion h-[100px] bg-white md:sticky top-0 z-10 w-full border-b border-gray-light">
+  <div class="md:centered md:px-4 h-full">
+    <div class="flex items-center md:justify-center h-full relative">
+      <button
+        id="mobile-nav-menu-button"
+        type="button"
+        title="Navigation Menu Button"
+        aria-label="Navigation Menu Button"
+        aria-controls="nav-list"
+        aria-expanded="false"
+        class="inline md:hidden bg-[url('/icons/nav-icon.svg')] ml-4 bg-no-repeat bg-center p-5 rounded-full hover:bg-gray-light active:brightness-[95%] transition-all duration-150 js-nav-button"
+      ></button>
+
+      <ul
+        id="nav-list"
+        aria-labelledby="mobile-nav-menu-button"
+        class="accordion-content max-md:absolute max-md:w-full max-md:top-[100%] max-md:px-4 max-md:bg-gray-dark max-md:text-white md:flex items-center centered xl:justify-center gap-10 lg:gap-14"
+      >
+        <li><a href="#project" class="max-md:block max-md:py-4 lg:text-lg hover:underline">Our Project</a></li>
+        <li>
+          <a href="#projections" class="max-md:block max-md:py-4 lg:text-lg hover:underline">Projections</a>
+        </li>
+        <li><a href="#about" class="max-md:block max-md:py-4 lg:text-lg hover:underline">About</a></li>
+        <li><a href="#faq" class="max-md:block max-md:py-4 lg:text-lg hover:underline">FAQ</a></li>
+        <li>
+          <a class="max-md:block max-md:py-4 lg:text-lg hover:underline" href="#" target="_blank">
+            <span class="flex items-center">
+              GitHub
+              <i
+                class="inline-block ml-1 w-5 h-5 max-md:bg-[url(/icons/external-link-white.svg)] md:bg-[url(/icons/external-link.svg)]"
+              ></i>
+            </span>
+          </a>
+        </li>
+      </ul>
+      <a href="#" class="button button-primary absolute right-4 md:inline">Download Report</a>
+    </div>
+  </div>
+</nav>

@@ -3,7 +3,7 @@ import plugin from 'tailwindcss/plugin';
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 export default {
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  content: ['./index.html', './src/**/*.{html,js,ts,jsx,tsx}'],
   theme: {
     screens: {
       xsm: '400px',

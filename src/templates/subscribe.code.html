@@ -1,0 +1,26 @@
+<script>
+  function ml_webform_success_<%= mailerLite.code %>() {
+    let successRow = document.getElementById('sign-up-success');
+    let inputs = document.getElementById('sign-up-inputs');
+    let captcha = document.getElementById('sign-up-captcha');
+
+    if (successRow) {
+      successRow.style.display = 'block';
+    }
+
+    if (inputs) {
+      inputs.style.display = 'none';
+    }
+
+    if (captcha) {
+      captcha.style.display = 'none';
+    }
+  }
+</script>
+<script
+  src="https://groot.mailerlite.com/js/w/webforms.min.js?v2d8fb22bb5b3677f161552cd9e774127"
+  type="text/javascript"
+></script>
+<script>
+  fetch('https://assets.mailerlite.com/jsonp/<%= mailerLite.accountId %>/forms/<%= mailerLite.formId %>/takel');
+</script>
