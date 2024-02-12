@@ -7,7 +7,7 @@
 }
 
 .button {
-  @apply px-7 py-3 border rounded-4xl font-medium text-center transition-all duration-150 active:bg-primary-dark;
+  @apply px-7 py-3 border rounded-4xl font-medium text-center transition-all duration-150 active:bg-primary-dark flex items-center justify-center;
 }
 
 .button:hover:not(:active) {
@@ -83,6 +83,56 @@
   animation: fadeIn 0.5s ease-out;
 }
 
+/**
+ * Captcha
+ */
+.captcha-container {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  color: #ff0000;
+}
+
+@media screen and (max-width: 350px) {
+  .captcha-container.ml-error {
+    padding: 0;
+  }
+
+  .captcha-container.ml-error iframe {
+    border: solid 1px #ff0000;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .g-recaptcha {
+    transform: scale(0.78);
+    -webkit-transform: scale(0.78);
+  }
+}
+
+@media screen and (min-width: 350px) {
+  .captcha-container.ml-error .validation-text {
+    display: block;
+    transition: display 0.5s ease;
+  }
+
+  .captcha-container.ml-error {
+    @apply border-2;
+    @apply border-red-500;
+    display: flex;
+    justify-content: center;
+    background-color: #f9f9f9;
+    padding: 8px 5px 3px;
+    transition: padding 0.5s ease;
+  }
+}
+
+.ml-field-email.ml-error {
+  @apply border-2;
+  @apply border-red-500;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -92,6 +142,7 @@
   }
 }
 
+/** Top Nav */
 .nav-list.accordion .accordion-content--open {
   animation: slideRight 0.2s ease-out;
 }

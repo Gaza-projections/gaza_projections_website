@@ -1,15 +1,21 @@
 /** @type {import('tailwindcss').Config} */
 import plugin from 'tailwindcss/plugin';
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
+    screens: {
+      xsm: '400px',
+      ...defaultTheme.screens
+    },
     extend: {
       screens: {
         'mid-lg': '867px'
       },
       fontFamily: {
-        sans: ['"Inter"', 'sans-serif']
+        sans: ['"Inter"', 'sans-serif'],
+        roboto: ['Roboto', 'Helvetica', 'Arial', 'sans-serif']
       },
       fontSize: {
         lg: '18px',
