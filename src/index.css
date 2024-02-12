@@ -83,6 +83,47 @@
   animation: fadeIn 0.5s ease-out;
 }
 
+/** Captcha **/
+.captcha-container {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  color: #FF0000;
+}
+
+@media screen and (min-width: 350px) {
+  .captcha-container.ml-error .validation-text {
+    display: block;
+    transition: display 0.5s ease;
+  }
+
+  .captcha-container.ml-error {
+    border: solid 1px #ff0000;
+    display: flex;
+    justify-content: center;
+    background-color: #f9f9f9;
+    padding: 8px 5px 3px;
+    transition: padding 0.5s ease;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .captcha-container.ml-error {
+    padding: 0;
+  }
+
+  .captcha-container.ml-error iframe {
+    border: solid 1px #ff0000;
+  }
+}
+@media screen and (max-width: 400px) {
+  .g-recaptcha {
+    transform: scale(0.78);
+    -webkit-transform: scale(0.78);
+  }
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
