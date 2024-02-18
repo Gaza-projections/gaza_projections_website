@@ -5,7 +5,7 @@ const env = process.env.NODE_ENV;
 
 const ejsConfig = {
   development: {
-    googleAnalyticsId: null,
+    googleAnalytics: null,
     mailerLite: {
       accountId: '817099',
       formId: '112449172135741241',
@@ -13,7 +13,10 @@ const ejsConfig = {
     }
   },
   production: {
-    googleAnalyticsId: 'G-N3FPXE95K7',
+    googleAnalytics: {
+      id: 'G-N3FPXE95K7',
+      debugMode: false
+    },
     mailerLite: {
       accountId: '817099',
       formId: '112449172135741241',

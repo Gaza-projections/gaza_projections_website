@@ -4,6 +4,7 @@ import './index.css';
 import Splide from '@splidejs/splide';
 import { Accordion } from './accordion';
 import { setupMenu } from './menu';
+import { setupAnalyticsEvents } from './analytics';
 
 document.addEventListener('DOMContentLoaded', () => {
   new Splide('.js-carousel').mount();
@@ -16,4 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Set up the main menu for mobile and other screens
   setupMenu();
+
+  if (window.CONFIG.isGoogleAnalyticsEnabled) {
+    setupAnalyticsEvents();
+  }
 });

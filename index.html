@@ -16,10 +16,15 @@
     different scenarios."
     />
   </head>
+  <script>
+    window.CONFIG = {
+      isGoogleAnalyticsEnabled: <%- googleAnalytics != null %>
+    };
+  </script>
 
-  <% if (googleAnalyticsId) { %>
+  <% if (googleAnalytics) { %>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=<%= googleAnalyticsId %>"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=<%= googleAnalytics.id %>"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -27,7 +32,7 @@
       }
       gtag('js', new Date());
 
-      gtag('config', '<%= googleAnalyticsId %>');
+      gtag('config', '<%= googleAnalytics.id %>' <% if (googleAnalytics.debugMode) { %>, { 'debug_mode': <%= googleAnalytics.debugMode %> } <% } %>);
     </script>
   <% } %>
 
