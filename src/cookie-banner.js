@@ -2,14 +2,14 @@ export function setupCookieBanner() {
   let banner = document.getElementById('cookie-banner');
 
   if (checkCookieConsent()) {
-    hideBanner();
+    hideBanner(banner);
   }
 
   document.getElementById('cookie-accept-button').addEventListener('click', () => {
     setCookieConsent();
     banner.style.bottom = '-100%';
     setTimeout(function () {
-      hideBanner();
+      hideBanner(banner);
     }, 700);
   });
 }
@@ -25,7 +25,7 @@ function setCookieConsent() {
   document.cookie = `cookieConsent=true; expires=${expires}`;
 }
 
-function hideBanner() {
+function hideBanner(banner) {
   banner.style.display = 'none';
   banner.ariaHidden = true;
 }
