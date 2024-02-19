@@ -15,14 +15,14 @@
     modules) in Gaza. These estimations will provide decision-makers and responders information to plan for and respond to
     different scenarios."
     />
-  </head>
-  <script>
-    window.CONFIG = {
-      isGoogleAnalyticsEnabled: <%- googleAnalytics != null %>
-    };
-  </script>
 
-  <% if (googleAnalytics) { %>
+    <script>
+      window.CONFIG = {
+        isGoogleAnalyticsEnabled: <%- googleAnalytics != null %>
+      };
+    </script>
+
+    <% if (googleAnalytics) { %>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=<%= googleAnalytics.id %>"></script>
     <script>
@@ -32,9 +32,13 @@
       }
       gtag('js', new Date());
 
-      gtag('config', '<%= googleAnalytics.id %>' <% if (googleAnalytics.debugMode) { %>, { 'debug_mode': <%= googleAnalytics.debugMode %> } <% } %>);
+      gtag('config', '<%= googleAnalytics.id %>', {
+          'anonymize_ip': true,
+          <%- googleAnalytics.debugMode ? 'debug_mode: true' : '' %>
+        });
     </script>
-  <% } %>
+    <% } %>
+  </head>
 
   <body>
     <div id="root">
@@ -62,14 +66,12 @@
 
         <!-- Footer Section -->
         <%- include('src/templates/footer.html') %>
-        
+
         <!-- Cookie Section -->
         <%- include('src/templates/cookie-banner.html') %>
       </main>
-      
     </div>
     <script type="module" src="/src/main.js"></script>
     <%- include('src/templates/subscribe.code.html') %>
   </body>
 </html>
-
