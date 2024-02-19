@@ -1,11 +1,8 @@
 <section id="projections" class="centered px-4 mt-14 py-14 bg-gray-dark lg:rounded-2xl md:scroll-my-14">
   <div class="lg:px-24">
     <h2 class="text-h2 text-center text-white">A Snapshot of Our Current Projections</h2>
-    <!-- <p class="mt-5 text-body-2 text-center text-white">
-      The increase in malnutrition is analysed as an underlying cause. We anticipate xx% yy% and zz% acute malnutrition
-      in the ceasefire, status quo, and escalation scenarios.
-    </p> -->
-
+    <!-- Total Projection Table -->
+    <%- include('src/templates/projection-summary-table.html') %>
     <!-- Carousel -->
     <div class="splide js-carousel" role="group" aria-label="Slides">
       <div class="relative flex items-center justify-center gap-7 py-12">
@@ -54,7 +51,8 @@
 
     <p class="text-body-2 text-center text-white pt-16 pb-10">
       Excess mortality is the number of deaths attributed directly and indirectly to the current crisis that are in
-      addition to deaths that would be expected based on Gaza data from the recent past.
+      addition to deaths that would be expected based on Gaza data from the recent past (baseline deaths). Increase in
+      malnutrition is analysed as an underlying cause.
     </p>
 
     <footer class="flex flex-col items-center gap-5">

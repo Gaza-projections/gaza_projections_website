@@ -133,6 +133,19 @@
   @apply border-red-500;
 }
 
+@media (max-width: 640px) {
+  .mobile-label {
+    @apply block border-b border-b-[#CFCFCF];
+  }
+  .mobile-label::before {
+    @apply block font-medium;
+    content: attr(data-label);
+  }
+  .mobile-label:not(.mobile-label-compact)::before {
+    @apply pb-[10px];
+  }
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;

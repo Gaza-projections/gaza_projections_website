@@ -18,6 +18,9 @@ export default {
         roboto: ['Roboto', 'Helvetica', 'Arial', 'sans-serif']
       },
       fontSize: {
+        xs: '12px',
+        sm: '14px',
+        md: '16px',
         lg: '18px',
         '2xl': '24px',
         '4xl': '36px',
@@ -51,6 +54,10 @@ export default {
         },
         '.text-h2': {
           fontSize: '24px',
+          fontWeight: '700'
+        },
+        '.text-h3': {
+          fontSize: '20px',
           fontWeight: '700'
         },
         '.text-body-1': {
