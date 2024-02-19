@@ -27,7 +27,7 @@ const ejsConfig = {
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/gaza_projections_website/',
+  base: '/',
   server: {
     host: '0.0.0.0'
   },
