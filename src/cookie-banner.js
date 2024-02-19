@@ -1,11 +1,11 @@
 export function setupCookieBanner() {
-  let banner = document.getElementById('cookie-banner');
+  let banner = document.querySelector('.js-cookie-banner');
 
   if (checkCookieConsent()) {
     hideBanner(banner);
   }
 
-  document.getElementById('cookie-accept-button').addEventListener('click', () => {
+  document.querySelector('.js-cookie-accept-button').addEventListener('click', () => {
     setCookieConsent();
     banner.style.bottom = '-100%';
     setTimeout(function () {
