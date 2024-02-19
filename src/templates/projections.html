@@ -1,10 +1,10 @@
 <section id="projections" class="centered px-4 mt-14 py-14 bg-gray-dark lg:rounded-2xl md:scroll-my-14">
   <div class="lg:px-24">
     <h2 class="text-h2 text-center text-white">A Snapshot of Our Current Projections</h2>
-    <p class="mt-5 text-body-2 text-center text-white">
+    <!-- <p class="mt-5 text-body-2 text-center text-white">
       The increase in malnutrition is analysed as an underlying cause. We anticipate xx% yy% and zz% acute malnutrition
       in the ceasefire, status quo, and escalation scenarios.
-    </p>
+    </p> -->
 
     <!-- Carousel -->
     <div class="splide js-carousel" role="group" aria-label="Slides">
@@ -28,16 +28,22 @@
         <div class="relative w-full md:mx-20">
           <div class="splide__track">
             <!-- Slides -->
-            <div class="splide__list">
-              <figure class="splide__slide">
-                <img src="/images/figure.png" class="w-full" alt="Figure 1" />
-              </figure>
-              <figure class="splide__slide">
-                <img src="/images/figure.png" class="w-full" alt="Figure 2" />
-              </figure>
-              <figure class="splide__slide">
-                <img src="/images/figure.png" class="w-full" alt="Figure 3" />
-              </figure>
+            <div class="splide__list bg-white">
+              <%- include('slide.html', { img: "/images/figures/injuries.jpg", alt: '', caption: `Projected numbers of
+              traumatic injury deaths, by scenario. The error bars indicate 95% uncertainty intervals. The darker
+              (lower) portion of each bar indicates deaths due to wounds among people who initially survived their
+              injury. The lighter (upper) portion of the bars in the status quo and escalation scenarios indicate
+              immediate deaths due to traumatic injury.` })%> <%- include('slide.html', { img:
+              "/images/figures/epidemic.jpg", alt: '', caption: `Estimated probability of exceeding specific death toll
+              thresholds due to all epidemic-prone pathogens combined, by scenario, over the six-month projection
+              period. (see details in the report)` })%> <%- include('slide.html', { img: "/images/figures/neonatal.png",
+              alt: '', caption: `Cumulative newborn mortality (all excluding traumatic injury deaths) by period and
+              scenario. The grey line shows the counterfactual trend based on pre-war mortality.` })%> <%-
+              include('slide.html', { img: "/images/figures/ncds.jpg", alt: '', caption: `Projected number of deaths due
+              to specific high-burden NCDs, by scenario, (in grey we have the pre-war mortality data expected for six
+              months and the excess mortality marked in colour fill).` })%> <%- include('slide.html', { img:
+              "/images/figures/malnutrition.png", alt: '', caption: `Projected change in the prevalence of global acute
+              malnutrition, by time-period and scenario.` })%>
             </div>
           </div>
         </div>
@@ -55,7 +61,20 @@
       <h2 class="text-h2 text-white">For more details, please see our full report:</h2>
       <div class="flex max-sm:flex-col gap-5">
         <a href="#" class="button button-primary" data-event-name="download_report">Download Full Report</a>
-        <a href="#" class="button button-inverted" data-event-name="download_arabic_summary">Download Arabic Summary</a>
+        <button
+          disabled
+          class="button button-inverted pointer-events-none opacity-50"
+          data-event-name="download_arabic_summary"
+        >
+          Arabic Summary (Coming Soon)
+        </button>
+        <button
+          disabled
+          class="button button-inverted pointer-events-none opacity-50"
+          data-event-name="download_hebrew_summary"
+        >
+          Hebrew Summary (Coming Soon)
+        </button>
       </div>
     </footer>
   </div>
