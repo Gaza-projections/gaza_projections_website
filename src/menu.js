@@ -73,13 +73,15 @@ export function setupMenu() {
       entries.forEach((entry) => {
         // Update info about the sections' visibility
         const mapRecord = linkMap.get(entry.target.id);
-        mapRecord.isActive = entry.isIntersecting;
-        // Intersection indicates how visible in the viewport a section is
-        mapRecord.intersection = entry.intersectionRatio;
-        // If the entry is not intersecting (visible) and matches the URL hash
-        if (!entry.isIntersecting && window.location.hash === `#${entry.target.id}`) {
-          // Remove the hash from the URL
-          history.pushState('', document.title, `${window.location.pathname}${window.location.search}`);
+        if (mapRecord) {
+          mapRecord.isActive = entry.isIntersecting;
+          // Intersection indicates how visible in the viewport a section is
+          mapRecord.intersection = entry.intersectionRatio;
+          // If the entry is not intersecting (visible) and matches the URL hash
+          if (!entry.isIntersecting && window.location.hash === `#${entry.target.id}`) {
+            // Remove the hash from the URL
+            history.pushState('', document.title, `${window.location.pathname}${window.location.search}`);
+          }
         }
       });
 
