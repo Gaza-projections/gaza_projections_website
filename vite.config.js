@@ -7,9 +7,9 @@ const ejsConfig = {
   development: {
     googleAnalytics: null,
     mailerLite: {
-      accountId: '817099',
-      formId: '112449172135741241',
-      code: '12133001'
+      accountId: '823524',
+      formId: '113561491340265031',
+      code: '12487373'
     }
   },
   production: {
@@ -18,9 +18,9 @@ const ejsConfig = {
       debugMode: false
     },
     mailerLite: {
-      accountId: '817099',
-      formId: '112449172135741241',
-      code: '12133001'
+      accountId: '823524',
+      formId: '113561491340265031',
+      code: '12487373'
     }
   }
 }[env];
