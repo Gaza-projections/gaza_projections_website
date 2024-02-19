@@ -1,22 +1,26 @@
 export function setupAnalyticsEvents() {
   const EVENTS = {
-    'download_report': {
+    download_report: {
       category: 'engagement',
       label: 'Download Report'
     },
-    'download_previous_report': {
+    download_previous_report: {
       category: 'engagement',
       label: 'Download Previous Report'
     },
-    'download_methods_annex': {
+    download_methods_annex: {
       category: 'engagement',
       label: 'Download Methods Annex'
     },
-    'download_arabic_summary': {
+    download_arabic_summary: {
       category: 'engagement',
       label: 'Download Arabic Summary'
     },
-    'github': {
+    download_hebrew_summary: {
+      category: 'engagement',
+      label: 'Download Hebrew Summary'
+    },
+    github: {
       category: 'engagement',
       label: 'GitHub'
     }
