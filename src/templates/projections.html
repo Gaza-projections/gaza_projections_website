@@ -29,61 +29,62 @@
           <div class="splide__track">
             <!-- Slides -->
             <div class="splide__list bg-white">
-              <%- include('slide.html', { img: "/images/figures/injuries.jpg", alt: `A bar graph displaying projected 
-              numbers of traumatic injury deaths over two time periods, months 1 to 3 and months 4 to 6, under three different 
-              scenarios: ceasefire, status quo, and escalation. In the first period, the ceasefire scenario shows the lowest 
-              amount of deaths, the status quo has a substantial number, and the escalation scenario has the highest. 
-              The second period shows a similar pattern with slightly decreased numbers for ceasefire and similar 
-              values for status quo and escalation scenarios. Each bar has an error bar indicating a 95% uncertainty interval. 
-              The bars are divided into two colors; the darker lower portion represents deaths due to wounds among people
-              who initially survived their injury, and the lighter upper portion shows immediate deaths due to traumatic 
-              injury.`, caption: `Projected numbers of traumatic injury deaths, by scenario. The error bars indicate 95% uncertainty 
-              intervals. The darker (lower) portion of each bar indicates deaths due to wounds among people who initially survived their
-              injury. The lighter (upper) portion of the bars in the status quo and escalation scenarios indicate
-              immediate deaths due to traumatic injury.` })%> <%- include('slide.html', { img:
-              "/images/figures/epidemic.jpg", alt: `A bar graph presenting the estimated probability of exceeding specific death 
-              toll thresholds due to all epidemic-prone pathogens combined, over a six-month projection period, 
-              under three scenarios: ceasefire, status quo, and escalation. Each scenario is divided into three categories 
-              based on the number of deaths: greater than or equal to 100, 1,000, and 10,000. The ceasefire scenario 
-              shows a low to moderate probability, with the highest probability just below 0.3 for at least 100 deaths, 
-              decreasing for higher death tolls. The status quo scenario has a higher probability for all categories, 
-              peaking at nearly 0.35 for at least 100 deaths. The escalation scenario presents the highest probabilities, 
-              with the highest being close to 0.4 for at least 100 deaths, and still significant probabilities for the higher 
-              death tolls.`, caption: `Estimated probability of exceeding specific death toll
-              thresholds due to all epidemic-prone pathogens combined, by scenario, over the six-month projection
-              period. (see details in the report)` })%> <%- include('slide.html', { img: "/images/figures/neonatal.png",
-              alt: `A line graph showing the cumulative newborn mortality (excluding traumatic injury deaths) by period 
-              and scenario from October 2023 to August 2024. Four lines represent different conditions: pre-war trend, 
-              actual data to date, and projections under ceasefire, status quo, and escalation scenarios. The pre-war 
-              trend is shown with a gray line, which is the counterfactual based on pre-war mortality rates. 
-              The 'to date' line shows actual data up to the current period, while the 'ceasefire' (green), 
-              'status quo' (light blue), and 'escalation' (dark blue) lines depict projected mortality for future months, 
-              each climbing at varying rates, with the escalation scenario showing the steepest increase. 
-              Two vertical dashed lines separate the graph into the observed period and two projection periods, 
-              months 1-3 and months 4-6.`, caption: `Cumulative newborn mortality (all excluding traumatic injury deaths) 
-              by period and scenario. The grey line shows the counterfactual trend based on pre-war mortality.` })%> <%-
-              include('slide.html', { img: "/images/figures/ncds.jpg", alt: `A set of bar graphs representing 
-              the projected number of deaths due to specific high-burden non-communicable diseases (NCDs) across 
-              three scenarios: ceasefire, status quo, and escalation. Each graph is for a different disease category: 
-              cancer (breast, colorectal, lung), chronic kidney disease, diabetes type 1, ischemic heart disease, 
-              and stroke (hemorrhagic, ischemic). The bars are split into two parts: the lower grey portion indicates 
-              pre-war mortality data expected for six months, and the colored upper portion marks the excess mortality 
-              under each scenario. In cancer, the ceasefire scenario projects around 53 excess deaths, status quo around 89, 
-              and escalation around 87. In chronic kidney disease, the ceasefire scenario projects around 36 excess deaths, 
-              status quo around 67, and escalation around 77. In diabetes, the ceasefire scenario projects around 36 excess deaths, 
-              status quo around 191, and escalation around 271. In ischaemic heart disease, the ceasefire scenario projects around 
-              1427 excess deaths, status quo around 1954, and escalation around 2050. In stroke, the ceasefire scenario projects 
-              around 129 excess deaths, status quo around 180, and escalation around 191.`, 
-              caption: `Projected number of deaths due
-              to specific high-burden NCDs, by scenario, (in grey we have the pre-war mortality data expected for six
-              months and the excess mortality marked in colour fill).` })%> <%- include('slide.html', { img:
-              "/images/figures/malnutrition.png", alt: `A bar graph depicting the projected change in the prevalence of global 
-              acute malnutrition by time-period and scenario. There are three time frames presented: pre-war prevalence at 3.2%, 
-              current to-date prevalence at 14.1%, and two projection periods for months 1 to 3 and months 4 to 6. In the first 
-              projection period, the ceasefire scenario shows a prevalence of 13.4%, status quo at 16.6%, and escalation at 24.5%. 
-              In the second projection period, the prevalence under the ceasefire scenario is slightly reduced to 12.4%, the status 
-              quo increases to 21.6%, and the escalation scenario shows a significant rise to 46.4%.`, 
-              caption: `Projected change in the prevalence of global acute malnutrition, by time-period and scenario.` })%>
+              <%- include('slide.html', { img: "/images/figures/injuries.jpg", alt: `A bar graph displaying projected
+              numbers of traumatic injury deaths over two time periods, months 1 to 3 and months 4 to 6, under three
+              different scenarios: ceasefire, status quo, and escalation. In the first period, the ceasefire scenario
+              shows the lowest amount of deaths, the status quo has a substantial number, and the escalation scenario
+              has the highest. The second period shows a similar pattern with slightly decreased numbers for ceasefire
+              and similar values for status quo and escalation scenarios. Each bar has an error bar indicating a 95%
+              uncertainty interval. The bars are divided into two colors; the darker lower portion represents deaths due
+              to wounds among people who initially survived their injury, and the lighter upper portion shows immediate
+              deaths due to traumatic injury.`, caption: `Projected numbers of traumatic injury deaths, by scenario. The
+              error bars indicate 95% uncertainty intervals. The darker (lower) portion of each bar indicates deaths due
+              to wounds among people who initially survived their injury. The lighter (upper) portion of the bars in the
+              status quo and escalation scenarios indicate immediate deaths due to traumatic injury.` })%> <%-
+              include('slide.html', { img: "/images/figures/epidemic.jpg", alt: `A bar graph presenting the estimated
+              probability of exceeding specific death toll thresholds due to all epidemic-prone pathogens combined, over
+              a six-month projection period, under three scenarios: ceasefire, status quo, and escalation. Each scenario
+              is divided into three categories based on the number of deaths: greater than or equal to 100, 1,000, and
+              10,000. The ceasefire scenario shows a low to moderate probability, with the highest probability just
+              below 0.3 for at least 100 deaths, decreasing for higher death tolls. The status quo scenario has a higher
+              probability for all categories, peaking at nearly 0.35 for at least 100 deaths. The escalation scenario
+              presents the highest probabilities, with the highest being close to 0.4 for at least 100 deaths, and still
+              significant probabilities for the higher death tolls.`, caption: `Estimated probability of exceeding
+              specific death toll thresholds due to all epidemic-prone pathogens combined, by scenario, over the
+              six-month projection period. (see details in the report)` })%> <%- include('slide.html', { img:
+              "/images/figures/neonatal.png", alt: `A line graph showing the cumulative newborn mortality (excluding
+              traumatic injury deaths) by period and scenario from October 2023 to August 2024. Four lines represent
+              different conditions: pre-war trend, actual data to date, and projections under ceasefire, status quo, and
+              escalation scenarios. The pre-war trend is shown with a gray line, which is the counterfactual based on
+              pre-war mortality rates. The 'to date' line shows actual data up to the current period, while the
+              'ceasefire' (green), 'status quo' (light blue), and 'escalation' (dark blue) lines depict projected
+              mortality for future months, each climbing at varying rates, with the escalation scenario showing the
+              steepest increase. Two vertical dashed lines separate the graph into the observed period and two
+              projection periods, months 1-3 and months 4-6.`, caption: `Cumulative newborn mortality (all excluding
+              traumatic injury deaths) by period and scenario. The grey line shows the counterfactual trend based on
+              pre-war mortality.` })%> <%- include('slide.html', { img: "/images/figures/ncds.jpg", alt: `A set of bar
+              graphs representing the projected number of deaths due to specific high-burden non-communicable diseases
+              (NCDs) across three scenarios: ceasefire, status quo, and escalation. Each graph is for a different
+              disease category: cancer (breast, colorectal, lung), chronic kidney disease, diabetes type 1, ischemic
+              heart disease, and stroke (hemorrhagic, ischemic). The bars are split into two parts: the lower grey
+              portion indicates pre-war mortality data expected for six months, and the colored upper portion marks the
+              excess mortality under each scenario. In cancer, the ceasefire scenario projects around 53 excess deaths,
+              status quo around 89, and escalation around 87. In chronic kidney disease, the ceasefire scenario projects
+              around 36 excess deaths, status quo around 67, and escalation around 77. In diabetes, the ceasefire
+              scenario projects around 36 excess deaths, status quo around 191, and escalation around 271. In ischaemic
+              heart disease, the ceasefire scenario projects around 1427 excess deaths, status quo around 1954, and
+              escalation around 2050. In stroke, the ceasefire scenario projects around 129 excess deaths, status quo
+              around 180, and escalation around 191.`, caption: `Projected number of deaths due to specific high-burden
+              NCDs, by scenario, (in grey we have the pre-war mortality data expected for six months and the excess
+              mortality marked in colour fill).` })%> <%- include('slide.html', { img:
+              "/images/figures/malnutrition.png", alt: `A bar graph depicting the projected change in the prevalence of
+              global acute malnutrition by time-period and scenario. There are three time frames presented: pre-war
+              prevalence at 3.2%, current to-date prevalence at 14.1%, and two projection periods for months 1 to 3 and
+              months 4 to 6. In the first projection period, the ceasefire scenario shows a prevalence of 13.4%, status
+              quo at 16.6%, and escalation at 24.5%. In the second projection period, the prevalence under the ceasefire
+              scenario is slightly reduced to 12.4%, the status quo increases to 21.6%, and the escalation scenario
+              shows a significant rise to 46.4%.`, caption: `Projected change in the prevalence of global acute
+              malnutrition, by time-period and scenario.` })%>
             </div>
           </div>
         </div>
