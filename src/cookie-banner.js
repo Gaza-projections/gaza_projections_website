@@ -1,6 +1,5 @@
 export function setupCookieBanner() {
   let banner = document.querySelector('.js-cookie-banner');
-
   if (checkCookieConsent()) {
     hideBanner(banner);
   }
