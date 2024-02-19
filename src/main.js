@@ -23,6 +23,4 @@ document.addEventListener('DOMContentLoaded', () => {
   if (window.CONFIG.isGoogleAnalyticsEnabled) {
     setupAnalyticsEvents();
   }
-
-  
 });

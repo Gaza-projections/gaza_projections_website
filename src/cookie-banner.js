@@ -1,3 +1,19 @@
+export function setupCookieBanner() {
+  let banner = document.getElementById('cookie-banner');
+
+  if (checkCookieConsent()) {
+    hideBanner();
+  }
+
+  document.getElementById('cookie-accept-button').addEventListener('click', () => {
+    setCookieConsent();
+    banner.style.bottom = '-100%';
+    setTimeout(function () {
+      hideBanner();
+    }, 700);
+  });
+}
+
 function checkCookieConsent() {
   return document.cookie.split(';').some((item) => item.trim().startsWith('cookieConsent='));
 }
@@ -9,18 +25,7 @@ function setCookieConsent() {
   document.cookie = `cookieConsent=true; expires=${expires}`;
 }
 
-export function setupCookieBanner() {
-  let banner = document.getElementById('cookie-banner');
-
-  if (checkCookieConsent()) {
-    banner.style.display = 'none';  
-  }
-
-  document.getElementById('cookie-accept-button').addEventListener('click', () => {
-    setCookieConsent();
-    banner.style.bottom = '-100%';
-    setTimeout(function () {
-      banner.style.display = 'none'; 
-    }, 700);
-  });
+function hideBanner() {
+  banner.style.display = 'none';
+  banner.ariaHidden = true;
 }
