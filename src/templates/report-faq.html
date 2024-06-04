@@ -1,0 +1,29 @@
+<!-- Accordions -->
+<% for (let [index,item] of Object.entries(faq)) { %> <% key = id + '-' + index %>
+<!-- Questions -->
+<div
+  class="accordion w-full js-accordion border border-gray-100 p-10 rounded-lg"
+  style="box-shadow: 0px 20px 95px 0px #c9cbcc4d"
+>
+  <h3 class="js-accordion-title">
+    <button
+      type="button"
+      aria-expanded="false"
+      aria-controls="accordionSectionId<%= key %>"
+      id="accordionId<%= key %>"
+      class="flex items-center w-full text-left"
+    >
+      <i class="accordion-title-icon w-12 h-10 border border-primary rounded-lg mr-7 bg-center bg-no-repeat"></i>
+      <span class="font-semibold text-lg flex-1"><%- item.question %></span>
+    </button>
+  </h3>
+  <div
+    id="accordionSectionId<%= key %>"
+    role="region"
+    aria-labelledby="accordionId<%= key %>"
+    class="accordion-content pt-7 text-base pl-20 text-[#637381]"
+  >
+    <%- item.answer %>
+  </div>
+</div>
+<% } %>

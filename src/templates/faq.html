@@ -1,4 +1,4 @@
-<% const faq = [{ question: 'What is the aim of this project?', answer: `
+<% const faq1 = [{ question: 'What is the aim of this project?', answer: `
 <p>
   This project aims to provide projections of excess mortality for different causes of excess mortality (mortality
   modules) in Gaza under three scenarios: 1) ceasefire, 2) status quo (continuation of conditions observed during the
@@ -214,37 +214,154 @@ Research Ethics Committee.
 }
 ] %>
 
+<% const faq2 = [{ question: 'Who undertook this research?', answer: `
+<p>
+  This project is an independent collaboration between researchers from The London School of
+Hygiene &amp; Tropical Medicine and The Center for Humanitarian Health at The Johns Hopkins
+University.
+</p>
+`}, {
+  question: 'What is the goal of this projection?', answer: `
+  <p>
+    The goal of this scenario-based model is to provide a plausible projection of the number of
+traumatic injury deaths that could occur in Rafah over the coming 3 months so that policymakers
+and humanitarians can make sound, evidence-based decisions. Ultimately, it is hoped that this
+projection will make some contribution to saving lives.
+</p>
+<p>
+  Scenario-based models are needed to support forward looking evidence-based decision making in
+Rafah. Since mortality and other data sources in Gaza are no longer able to provide a complete
+picture of deaths, multiple data sources are needed for this projection.
+</p>
+  `
+}, {
+  question: 'Why focus on traumatic injury deaths in Rafah?', answer: `
+  <p>
+    We focused on projecting the number of traumatic injury deaths amongst Gazans in Rafah from 20
+May 2024 and for the subsequent 90 days.
+  </p>
+  <p>
+    While conflict continues throughout Gaza, Rafah was selected as the focus of this scenario-based
+model because, until recently, this was the area where most Gazans had fled to and there had not
+yet been a wide-scale military invasion in this Governorate since the conflict began on 7 October
+2023. However, the Israeli government made its intention to invade Rafah clear, and this began on
+6 May 2024 following an evacuation order.
+  </p>
+  <p>
+    This scenario is focused solely on Gazans who are likely to die directly due to traumatic injuries and
+does not include:
+  <ul class="list-disc px-4 py-2">
+    <li class="pb-2">
+      Deaths that have already occurred in Rafah previously, including those since the 6 May
+evacuation order.
+    </li>
+    <li class="pb-2">
+      Deaths that will occur in Rafah after the projection period due to non-fatal traumatic
+injuries sustained during that period.
+    </li>
+    <li class="pb-2">
+      Deaths indirectly caused by the war, including deaths due to infectious diseases, non-
+communicable diseases and maternal and child health issues.
+    </li>
+  </ul>
+</p>
+<p>
+  These other causes of death were considered in our first scenario-based health impact projections
+  <a href="/gaza_projections_report.pdf" class="text-primary underline" target="_blank">
+    report
+  </a> which projected excess mortality for the period of February to August 2024 across all of
+Gaza.
+  </p>
+  <p>
+    This report was developed as a supplement to the prior report because an escalation in the
+intensity of the conflict in Rafah is likely to significantly increase direct deaths due to traumatic
+injuries in this governorate compared to previous traumatic injury deaths in Rafah.
+  </p>
+    `
+}, {
+  question: 'What are the results?', answer: `
+  <p>
+    We project 3,509 traumatic injury deaths to occur between 20 May to 17 August 2024 solely in the
+Rafah governorate. That is the equivalent to nearly 40 deaths/day for 90 days. In comparison, from
+6-19 May, there have been 16 deaths/day due to traumatic injuries in Rafah as reported by ACLED.
+  </p>
+  <p>
+    Many more traumatic injury deaths are continuing to occur throughout Gaza. Furthermore, we would
+
+expect to see increased deaths due to other causes, such as infectious diseases, non-
+communicable diseases and those due to maternal and child health occurring in the Rafah
+
+Governorate and beyond.
+  </p>
+  <p>
+    The uncertainty range of this projection is 3,143 to 3,946 traumatic injury deaths; for the higher
+estimate, the daily death rate increases to 44 deaths/day.
+</p>
+<p>
+  This projection is not a ‘worst case scenario’, and deaths may increase significantly if Israeli military
+tactics differ substantially from what we have seen in Khan Younis during 16 December 2023 to 14
+March 2024.
+  </p>
+  `
+}, {
+  question: 'What data sources were used?', answer: `
+  <p>
+    Four sources of available data were used for this projection: 1) Ministry of Health (MoH) data on
+conflict fatalities; 2) Armed Conflict Location & Events Data Project (ACLED) data on fatalities for the
+five governorates in Gaza since 7 October 2023; 3) United Nations Relief and Works Agency for
+Palestine Refugees in the Near East (UNRWA) reports of traumatic injury fatalities among its
+employees; and 4) Estimates of population by governorate since 7 October, adjusted for displacement by the Oxford Population Health Unit. The first three sources are publicly available,
+and the latter is available upon request.
+    </p>
+    `
+}, {
+  question: 'What is the methodology used?', answer: `
+  <p>
+    Our projection for Rafah is based on empirical observations from the Israeli military operation that
+began in Khan Younis in December 2023. We hypothesize, based on available evidence, that the
+patterns and outcomes witnessed during this phase of the conflict could resemble potential
+developments in Rafah under comparable circumstances. They are based on the time series of
+traumatic injury fatalities from Khan Younis over the 90-day period starting from 16 December 2023
+(14 days after the 2 December 2023 evacuation notice for Khan Younis) to 14 March 2024, adjusted
+for differences in population size.
+  </p>
+  <p>
+    The Gaza Ministry of Health’s reporting on fatalities does not include geographic locations.
+Consequently, we used the ACLED database, which was incomplete, but did include the locations
+of traumatic injury deaths. We then resolved this uncertainty through machine learning imputation
+and adjusted the ratio of traumatic injury deaths reported by the MoH and ACLED to remove some
+potential bias due to incomplete detection of deaths by ACLED. Finally, to obtain the projection of
+the number of counted Rafah fatalities, the number of counted fatalities in Khan Younis was scaled
+by the ratio of the Rafah and Khan Younis populations at day 14 following their respective
+evacuation orders.
+  </p>
+  <p>
+    As we did in our first report, we used the UNRWA staff death reports as an independent source and
+compared it to the MoH mortality database to estimate the uncounted deaths from the latter; these
+include people who died under the rubble and other deaths that may not have been reported
+through the MoH system.
+  </p>`
+}, {
+  question: 'What are the main conclusions of the report?', answer: `
+  <p>
+    This projection of possible traumatic injury deaths in Rafah highlights the urgent and lifesaving
+need for an immediate ceasefire to reduce the mortality amongst civilians. International diplomacy
+and humanitarian efforts must prioritize the cessation of hostilities.
+  </p>
+  <p>
+    Advocacy for a ceasefire and the urgent need for civilian protection must be sustained.
+  </p>
+    `
+}
+] %>
+
 <section id="faq" class="faq centered px-4 flex flex-col items-center gap-4 w-full py-10 lg:py-14 md:scroll-my-14">
   <h2 class="text-h1">FAQ</h2>
 
-  <!-- Accordions -->
+  <h3 class="text-h2 py-4">Crisis in Gaza: Scenario-based Health Impact Projections</h3>
+  <%- include('src/templates/report-faq.html', { id: 1, faq: faq1 }) %>
 
-  <!-- Questions -->
-  <% for (let [index,item] of Object.entries(faq)) { %>
-  <div
-    class="accordion w-full js-accordion border border-gray-100 p-10 rounded-lg"
-    style="box-shadow: 0px 20px 95px 0px #c9cbcc4d"
-  >
-    <h3 class="js-accordion-title">
-      <button
-        type="button"
-        aria-expanded="false"
-        aria-controls="accordionSectionId<%= index %>"
-        id="accordionId<%= index %>"
-        class="flex items-center w-full text-left"
-      >
-        <i class="accordion-title-icon w-12 h-10 border border-primary rounded-lg mr-7 bg-center bg-no-repeat"></i>
-        <span class="font-semibold text-lg flex-1"><%- item.question %></span>
-      </button>
-    </h3>
-    <div
-      id="accordionSectionId<%= index %>"
-      role="region"
-      aria-labelledby="accordionId<%= index %>"
-      class="accordion-content pt-7 text-base pl-20 text-[#637381]"
-    >
-      <%- item.answer %>
-    </div>
-  </div>
-  <% } %>
+
+  <h3 class="text-h2 py-4">Crisis in Gaza: Projected Deaths due to Traumatic Injuries in the Rafah Governorate</h3>
+  <%- include('src/templates/report-faq.html', { id: 2, faq: faq2 }) %>
 </section>

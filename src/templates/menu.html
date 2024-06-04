@@ -14,13 +14,14 @@
       <ul
         id="nav-list"
         aria-labelledby="mobile-nav-menu-button"
-        class="accordion-content max-md:absolute max-md:w-full max-md:top-[100%] max-md:px-4 max-md:h-[calc(100vh-100px)] max-md:bg-gray-dark max-md:text-white md:flex items-center centered xl:justify-center max-md:gap-10 md:gap-6 lg:gap-14 lg:text-lg"
+        class="accordion-content max-md:absolute max-md:w-full max-md:top-[100%] max-md:px-4 max-md:h-[calc(100vh-100px)] max-md:bg-gray-dark max-md:text-white md:flex items-center centered 1.5xl:justify-center max-md:gap-10 md:gap-6 lg:gap-14 lg:text-lg"
       >
         <li>
           <a href="#intro" class="max-md:block max-md:py-4 max-md:border-b max-md:border-b-gray-500 hover:underline"
             >Our Project</a
           >
         </li>
+        <% /*
         <li>
           <a
             href="#projections"
@@ -28,6 +29,7 @@
             >Projections</a
           >
         </li>
+        */ %>
         <li>
           <a href="#about" class="max-md:block max-md:py-4 max-md:border-b max-md:border-b-gray-500 hover:underline"
             >About</a
@@ -59,13 +61,22 @@
           </a>
         </li>
       </ul>
-      <a
-        href="/gaza_projections_report.pdf"
-        target="_blank"
-        class="button button-primary absolute right-4 md:inline"
-        data-event-name="download_report"
-        >Download Report</a
-      >
+      <div class="absolute right-4 flex gap-2">
+        <a
+          href="/gaza_projections_report.pdf"
+          target="_blank"
+          class="button button-primary max-lg:px-4 lg:px-5"
+          data-event-name="download_report"
+          ><span class="max-lg:hidden">Download&nbsp;</span>Report 1</a
+        >
+        <a
+          href="/docs/report2/traumatic_injuries_rafah.pdf"
+          target="_blank"
+          class="button button-primary max-lg:px-4 lg:px-5"
+          data-event-name="download_report_2"
+          ><span class="max-lg:hidden">Download&nbsp;</span>Report 2</a
+        >
+      </div>
     </div>
   </div>
 </nav>

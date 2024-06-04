@@ -2,7 +2,11 @@ export function setupAnalyticsEvents() {
   const EVENTS = {
     download_report: {
       category: 'engagement',
-      label: 'Download Report'
+      label: 'Download Report 1'
+    },
+    download_report_2: {
+      category: 'engagement',
+      label: 'Download Report 2'
     },
     download_previous_report: {
       category: 'engagement',
@@ -16,6 +20,10 @@ export function setupAnalyticsEvents() {
       category: 'engagement',
       label: 'Download Arabic Summary'
     },
+    download_arabic_summary_2: {
+      category: 'engagement',
+      label: 'Download Arabic Summary 2'
+    },
     download_hebrew_summary: {
       category: 'engagement',
       label: 'Download Hebrew Summary'
@@ -23,6 +31,14 @@ export function setupAnalyticsEvents() {
     github: {
       category: 'engagement',
       label: 'GitHub'
+    },
+    download_hebrew_summary_2: {
+      category: 'engagement',
+      label: 'Download Hebrew Summary 2'
+    },
+    github_2: {
+      category: 'engagement',
+      label: 'GitHub 2'
     }
   };
   for (let element of document.querySelectorAll('[data-event-name]')) {

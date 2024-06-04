@@ -23,4 +23,4 @@ To build the website for production use the command `npm run build`. This will b
 
 ## Deployment
 
-The website is deployed to Github Pages using a Github Action. The deployment will automatically kick off any time you push a commit to the `main` branch.
+The website is deployed to GitHub Pages using a GitHub Action. The deployment will automatically kick off any time you push a commit to the `main` branch.
