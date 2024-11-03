@@ -8,6 +8,10 @@ export function setupAnalyticsEvents() {
       category: 'engagement',
       label: 'Download Report 2'
     },
+    download_report_3: {
+      category: 'engagement',
+      label: 'Download Report 3'
+    },
     download_previous_report: {
       category: 'engagement',
       label: 'Download Previous Report'
@@ -39,6 +43,10 @@ export function setupAnalyticsEvents() {
     github_2: {
       category: 'engagement',
       label: 'GitHub 2'
+    },
+    download_briefing_note_3: {
+      category: 'engagement',
+      label: 'Download Briefing Note Report 3'
     }
   };
   for (let element of document.querySelectorAll('[data-event-name]')) {

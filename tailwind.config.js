@@ -12,7 +12,8 @@ export default {
     extend: {
       screens: {
         'mid-lg': '867px',
-        '1.5xl': '1450px'
+        '1.5xl': '1450px',
+        '2.5xl': '1900px'
       },
       fontFamily: {
         sans: ['"Inter"', 'sans-serif'],
