@@ -6,6 +6,7 @@ import { Accordion } from './accordion';
 import { setupMenu } from './menu';
 import { setupAnalyticsEvents } from './analytics';
 import { setupCookieBanner } from './cookie-banner';
+import { setupReportDropdown } from './report-dropdown';
 
 document.addEventListener('DOMContentLoaded', () => {
   // new Splide('.js-carousel').mount();
@@ -19,6 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Set up the main menu for mobile and other screens
   setupMenu();
   setupCookieBanner();
+  setupReportDropdown();
 
   if (window.CONFIG.isGoogleAnalyticsEnabled) {
     setupAnalyticsEvents();
