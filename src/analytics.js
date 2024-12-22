@@ -51,6 +51,10 @@ export function setupAnalyticsEvents() {
     download_briefing_note_3: {
       category: 'engagement',
       label: 'Download Briefing Note Report 3'
+    },
+    download_briefing_note_4: {
+      category: 'engagement',
+      label: 'Download Briefing Note Report 4'
     }
   };
   for (let element of document.querySelectorAll('[data-event-name]')) {
