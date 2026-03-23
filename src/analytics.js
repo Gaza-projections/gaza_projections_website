@@ -16,6 +16,10 @@ export function setupAnalyticsEvents() {
       category: 'engagement',
       label: 'Download Report 4'
     },
+    download_eval_report: {
+      category: 'engagement',
+      label: 'Download Evaluation Report'
+    },
     download_previous_report: {
       category: 'engagement',
       label: 'Download Previous Report'
